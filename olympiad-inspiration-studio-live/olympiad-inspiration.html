@@ -1,0 +1,4390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Olympiad Almanac</title>
+  <meta name="description" content="A premium daily Olympiad inspiration almanac with verified WhatsApp-ready profiles for Indian students, parents, and teachers.">
+  <meta name="build" content="lazy-archive-quality-sprint">
+  <script src="data/olympiad-inspiration-profiles-expanded-20260630.js"></script>
+  <style>
+    :root {
+      --serif: Georgia, "Times New Roman", Times, serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --ink: #17130d;
+      --ink-2: #34291b;
+      --muted: #756a5d;
+      --paper: #fffaf0;
+      --panel: #fffdf7;
+      --wash: #efe7d8;
+      --line: #d7c8ae;
+      --line-strong: #b9a27e;
+      --gold: #9c6f25;
+      --gold-soft: #f3dfb8;
+      --teal: #386f66;
+      --teal-soft: #e4f0ec;
+      --blue: #385d91;
+      --blue-soft: #e8edf6;
+      --rose: #8f3f4c;
+      --rose-soft: #f3e1e3;
+      --green: #4f7241;
+      --green-soft: #e7efdf;
+      --shadow: 0 26px 70px rgba(52, 41, 27, .15);
+      --shadow-soft: 0 12px 34px rgba(52, 41, 27, .09);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(156, 111, 37, .12), transparent 33vw),
+        linear-gradient(90deg, rgba(156, 111, 37, .055) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(52, 41, 27, .04) 1px, transparent 1px),
+        var(--wash);
+      background-size: auto, 36px 36px, 36px 36px, auto;
+      font-family: var(--sans);
+      letter-spacing: 0;
+    }
+
+    a { color: var(--blue); }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button:hover { border-color: var(--line-strong); }
+
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid rgba(184, 137, 45, .26);
+      outline-offset: 2px;
+    }
+
+    .app-shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) auto;
+      gap: 18px;
+      align-items: center;
+      padding: 16px clamp(16px, 3vw, 42px);
+      color: var(--ink);
+      background: rgba(255, 250, 240, .94);
+      border-top: 4px solid var(--ink);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brandmark {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--ink);
+      border-radius: 8px;
+      background: var(--ink);
+      color: #f4d793;
+      font-family: var(--serif);
+      font-weight: 900;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 22px;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .top-actions button {
+      color: var(--ink);
+      border-color: var(--line);
+      background: rgba(255, 255, 255, .5);
+    }
+
+    .top-actions button:hover { border-color: var(--line-strong); }
+
+    .primary {
+      padding: 0 14px;
+      color: #fffaf0 !important;
+      background: var(--ink) !important;
+      border-color: var(--ink) !important;
+    }
+
+    .icon-btn {
+      width: 42px;
+      padding: 0;
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: minmax(270px, 350px) minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px clamp(16px, 3vw, 42px) 34px;
+    }
+
+    .sidebar,
+    .stage,
+    .detail-panel,
+    .whatsapp-panel,
+    .archive-panel {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 253, 247, .96);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 88px;
+      align-self: start;
+      overflow: hidden;
+    }
+
+    .filters {
+      display: grid;
+      gap: 10px;
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #fffdf7, #fbf4e8);
+    }
+
+    .filter-toggle {
+      display: none;
+      width: calc(100% - 24px);
+      margin: 12px;
+      color: #fff9ec;
+      border-color: var(--ink);
+      background: var(--ink);
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+      color: var(--ink);
+      background: white;
+      font-family: var(--sans);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #f7eddb;
+    }
+
+    .stat {
+      min-height: 62px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: white;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .person-list {
+      max-height: calc(100vh - 330px);
+      overflow: auto;
+      padding: 8px;
+    }
+
+    .person-button {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 38px minmax(0, 1fr);
+      align-items: center;
+      gap: 10px;
+      min-height: 64px;
+      margin: 0 0 6px;
+      padding: 9px;
+      text-align: left;
+      border-color: transparent;
+      background: transparent;
+    }
+
+    .person-button.active {
+      border-color: rgba(184, 137, 45, .55);
+      background: #fbecd0;
+    }
+
+    .avatar,
+    .hero-avatar {
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      color: white;
+      font-weight: 900;
+      background: var(--blue);
+      font-family: var(--serif);
+    }
+
+    .avatar {
+      width: 38px;
+      height: 38px;
+      font-size: 13px;
+    }
+
+    .avatar.ai,
+    .hero-avatar.ai { background: var(--teal); }
+    .avatar.crypto,
+    .hero-avatar.crypto { background: var(--gold); color: #211705; }
+    .avatar.math,
+    .hero-avatar.math { background: var(--rose); }
+    .avatar.science,
+    .hero-avatar.science { background: var(--green); }
+
+    .person-copy { min-width: 0; }
+
+    .person-name {
+      display: block;
+      overflow: hidden;
+      color: var(--ink);
+      font-size: 14px;
+      font-family: var(--serif);
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .person-meta {
+      display: block;
+      margin-top: 3px;
+      overflow: hidden;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .workspace {
+      display: grid;
+      gap: 18px;
+      min-width: 0;
+      align-content: start;
+    }
+
+    .stage {
+      overflow: hidden;
+      color: var(--ink);
+      background:
+        linear-gradient(110deg, rgba(255, 250, 240, .98), rgba(246, 232, 203, .9)),
+        linear-gradient(180deg, rgba(156, 111, 37, .12), transparent);
+      border-top: 4px double var(--ink);
+      box-shadow: var(--shadow);
+    }
+
+    .stage-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(230px, 320px);
+      gap: 22px;
+      padding: clamp(20px, 3vw, 34px);
+    }
+
+    .stage-inner > *,
+    .content-grid > *,
+    .deep-grid > *,
+    .archive-panel > * {
+      min-width: 0;
+    }
+
+    .date-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      font-family: var(--sans);
+    }
+
+    .profile-heading {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-top: 18px;
+    }
+
+    .hero-avatar {
+      width: 64px;
+      height: 64px;
+      flex: 0 0 auto;
+      font-size: 19px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 64px);
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: .95;
+      letter-spacing: 0;
+    }
+
+    .role {
+      margin: 10px 0 0;
+      max-width: 820px;
+      color: var(--muted);
+      font-size: clamp(15px, 1.6vw, 18px);
+      line-height: 1.45;
+    }
+
+    .headline {
+      margin: 20px 0 0;
+      max-width: 760px;
+      color: var(--ink);
+      font-size: clamp(19px, 2vw, 25px);
+      font-family: var(--serif);
+      line-height: 1.28;
+      font-weight: 700;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      border-radius: 999px;
+      padding: 0 11px;
+      color: var(--ink);
+      background: rgba(255, 250, 240, .8);
+      border: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .review-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .review-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      border: 1px solid rgba(56, 111, 102, .24);
+      border-radius: 8px;
+      padding: 0 10px;
+      color: #163f38;
+      background: #e4f0ec;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .review-badge.warning {
+      color: #5d3f08;
+      border-color: rgba(156, 111, 37, .34);
+      background: #fff4d6;
+    }
+
+    .review-badge.needs {
+      color: #6c2733;
+      border-color: rgba(143, 63, 76, .34);
+      background: #f3e1e3;
+    }
+
+    .stage-card {
+      align-self: stretch;
+      display: grid;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: rgba(255, 253, 247, .66);
+    }
+
+    .stage-card h3 {
+      margin: 0;
+      color: var(--gold);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .stage-card p {
+      margin: 0;
+      color: var(--ink-2);
+      line-height: 1.48;
+      font-size: 14px;
+    }
+
+    .mission-control {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(420px, .95fr);
+      gap: 18px;
+      border: 1px solid rgba(23, 19, 13, .13);
+      border-radius: 8px;
+      padding: clamp(18px, 2.6vw, 28px);
+      background:
+        linear-gradient(135deg, rgba(31, 58, 82, .08), transparent 36%),
+        linear-gradient(180deg, #fffefa, #f3ead8);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .mission-copy {
+      display: grid;
+      align-content: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .mission-kicker {
+      width: fit-content;
+      border: 1px solid rgba(156, 111, 37, .34);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: #5b3f09;
+      background: #fff4d6;
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .mission-copy h3 {
+      margin: 0;
+      max-width: 760px;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(26px, 3vw, 42px);
+      line-height: 1.05;
+      font-weight: 700;
+    }
+
+    .mission-copy p {
+      margin: 0;
+      max-width: 74ch;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+      font-weight: 720;
+    }
+
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .mission-stat {
+      min-height: 112px;
+      display: grid;
+      align-content: space-between;
+      gap: 12px;
+      border: 1px solid rgba(23, 19, 13, .12);
+      border-radius: 8px;
+      padding: 14px;
+      background: rgba(255, 253, 247, .88);
+      box-shadow: 0 10px 24px rgba(41, 36, 30, .055);
+    }
+
+    .mission-stat strong {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(25px, 3.1vw, 38px);
+      line-height: .9;
+    }
+
+    .mission-stat span {
+      color: #6a4a13;
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .mission-stat small {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 750;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(330px, 430px);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .detail-panel {
+      padding: clamp(16px, 2.4vw, 24px);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .section-head h3 {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: .08em;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 10px;
+      color: var(--ink);
+      background: #fffaf0;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .deep-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .info-card {
+      min-height: 170px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fffdf7;
+    }
+
+    .info-card h4,
+    .timeline h4 {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.18;
+    }
+
+    .bullet-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 15px;
+      color: var(--ink-2);
+      line-height: 1.55;
+      font-size: 14.5px;
+    }
+
+    .bullet-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .62em;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--gold);
+    }
+
+    .timeline {
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fbf2e1;
+    }
+
+    .proof-panel {
+      margin-top: 12px;
+      border: 1px solid rgba(184, 137, 45, .45);
+      border-radius: 8px;
+      padding: 16px;
+      background: linear-gradient(180deg, #fff2cc, #fffaf0);
+    }
+
+    .proof-panel h4 {
+      margin: 0 0 10px;
+      color: #4f3708;
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .proof-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .proof-list li {
+      border-left: 3px solid var(--gold);
+      padding-left: 11px;
+      color: var(--ink-2);
+      line-height: 1.5;
+      font-size: 14.5px;
+    }
+
+    .proof-list a {
+      display: block;
+      margin-top: 4px;
+      overflow-wrap: anywhere;
+      font-weight: 800;
+    }
+
+    .proof-detail {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .timeline-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline-list li {
+      border-left: 3px solid var(--gold);
+      padding-left: 10px;
+      color: var(--ink-2);
+      line-height: 1.55;
+      font-size: 14.5px;
+    }
+
+    .coaching-note {
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      color: #4a3a17;
+      background: #fbecd0;
+      line-height: 1.48;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .sources {
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fffdf7;
+    }
+
+    .source-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .source-list a {
+      display: block;
+      overflow-wrap: anywhere;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .source-type {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .quality {
+      margin: 12px 0 0;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.48;
+    }
+
+    .archive-panel {
+      padding: clamp(16px, 2.4vw, 24px);
+    }
+
+    .archive-head {
+      align-items: flex-start;
+    }
+
+    .archive-head p,
+    .archive-note {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .archive-stats {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7eddb;
+    }
+
+    .archive-controls {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) 170px 220px auto;
+      gap: 10px;
+      align-items: end;
+      margin-bottom: 12px;
+    }
+
+    .archive-controls button {
+      min-height: 40px;
+      padding: 0 12px;
+    }
+
+    .archive-table-wrap {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf7;
+    }
+
+    .archive-table {
+      width: 100%;
+      min-width: 860px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .archive-table th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      padding: 10px;
+      color: var(--muted);
+      background: #fbf2e1;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .archive-table td {
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-2);
+      line-height: 1.42;
+      vertical-align: top;
+    }
+
+    .archive-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .medalist-name {
+      display: block;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .medalist-sub {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .award-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      border-radius: 999px;
+      padding: 0 9px;
+      color: #201704;
+      background: #f4d793;
+      border: 1px solid rgba(156, 111, 37, .42);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .award-silver { background: #eceef1; }
+    .award-bronze { background: #e8c6a3; }
+    .award-hm { background: #dceadc; color: #21351f; }
+
+    .archive-proof {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 10px;
+      background: #fffaf0;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .archive-open {
+      margin-top: 7px;
+      min-height: 30px;
+      padding: 0 10px;
+      font-size: 12px;
+    }
+
+    .whatsapp-panel {
+      position: sticky;
+      top: 88px;
+      overflow: hidden;
+    }
+
+    .message-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #fffaf0, #f7eddb);
+    }
+
+    .message-toolbar h3 {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .message-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .message-actions button {
+      min-height: 36px;
+      padding: 0 11px;
+      font-size: 13px;
+    }
+
+    .message-frame {
+      padding: 14px;
+      background:
+        linear-gradient(180deg, rgba(56, 111, 102, .08), rgba(156, 111, 37, .08)),
+        #f7eddb;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 670px;
+      display: block;
+      resize: vertical;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      padding: 18px;
+      color: var(--ink);
+      background: #fffdf7;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.72;
+      white-space: pre-wrap;
+    }
+
+    .toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      max-width: 340px;
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: #fffaf0;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      font-weight: 800;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px);
+      transition: opacity .16s ease, transform .16s ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .empty {
+      margin: 0;
+      padding: 16px;
+      color: var(--muted);
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    /* Premium command-desk refresh */
+    body {
+      background:
+        linear-gradient(180deg, rgba(22, 31, 38, .055), transparent 210px),
+        linear-gradient(90deg, rgba(31, 58, 82, .045) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(156, 111, 37, .045) 1px, transparent 1px),
+        #f5efe4;
+      background-size: auto, 48px 48px, 48px 48px, auto;
+    }
+
+    body[data-mode="story"] [data-view="archive"],
+    body[data-mode="archive"] [data-view="story"],
+    body[data-mode="archive"] .sidebar,
+    body[data-mode="archive"] .top-actions {
+      display: none;
+    }
+
+    body[data-mode="archive"] .main {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    body[data-mode="archive"] .workspace {
+      display: block;
+    }
+
+    .topbar {
+      grid-template-columns: minmax(280px, 1fr) auto minmax(280px, 1fr);
+      background: rgba(24, 21, 17, .96);
+      color: #fff9ec;
+      border-top: 0;
+      border-bottom: 1px solid rgba(244, 215, 147, .28);
+      box-shadow: 0 20px 48px rgba(21, 18, 14, .22);
+    }
+
+    .brandmark {
+      border-color: rgba(244, 215, 147, .72);
+      background: #f4d793;
+      color: #17130d;
+      box-shadow: inset 0 0 0 1px rgba(23, 19, 13, .18);
+    }
+
+    .brand h1 {
+      color: #fff9ec;
+      letter-spacing: .01em;
+    }
+
+    .brand p {
+      color: rgba(255, 249, 236, .68);
+    }
+
+    .view-switcher {
+      grid-column: 2;
+      justify-self: center;
+      display: inline-grid;
+      grid-template-columns: repeat(2, minmax(128px, 1fr));
+      gap: 4px;
+      min-height: 44px;
+      padding: 4px;
+      border: 1px solid rgba(244, 215, 147, .2);
+      border-radius: 8px;
+      background: rgba(255, 249, 236, .08);
+    }
+
+    .mode-tab {
+      min-height: 34px;
+      border: 0;
+      border-radius: 6px;
+      padding: 0 14px;
+      color: rgba(255, 249, 236, .72);
+      background: transparent;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .mode-tab.active {
+      color: #17130d;
+      background: #f4d793;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, .18);
+    }
+
+    .top-actions {
+      grid-column: 3;
+      justify-self: end;
+    }
+
+    .top-actions button {
+      color: #fff9ec;
+      border-color: rgba(244, 215, 147, .28);
+      background: rgba(255, 249, 236, .08);
+    }
+
+    .top-actions button:hover {
+      border-color: rgba(244, 215, 147, .66);
+      background: rgba(255, 249, 236, .14);
+    }
+
+    .top-actions .primary {
+      color: #17130d !important;
+      background: #f4d793 !important;
+      border-color: #f4d793 !important;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
+    }
+
+    .today-command {
+      padding: 0 12px;
+    }
+
+    .main {
+      gap: 22px;
+      padding-top: 22px;
+    }
+
+    .sidebar,
+    .stage,
+    .detail-panel,
+    .whatsapp-panel,
+    .archive-panel {
+      border-color: rgba(41, 36, 30, .14);
+      background: rgba(255, 253, 247, .98);
+      box-shadow: 0 18px 48px rgba(31, 28, 23, .1);
+    }
+
+    .sidebar {
+      top: 96px;
+      border-color: rgba(23, 19, 13, .12);
+    }
+
+    .filters {
+      gap: 12px;
+      padding: 16px;
+      background: #fffdf8;
+    }
+
+    label {
+      color: #6d6256;
+      letter-spacing: .08em;
+    }
+
+    input,
+    select {
+      min-height: 44px;
+      border-color: #d8cbb8;
+      background: #fffefb;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8);
+    }
+
+    input:hover,
+    select:hover,
+    textarea:hover {
+      border-color: #b99b61;
+    }
+
+    .stat-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      padding: 0;
+      background: #d9c8ad;
+    }
+
+    .stat {
+      min-height: 58px;
+      border: 0;
+      border-radius: 0;
+      padding: 10px 12px;
+      background: #fbf7ed;
+    }
+
+    .stat strong {
+      font-size: 22px;
+    }
+
+    .person-list {
+      padding: 10px;
+      background: #fffdf8;
+    }
+
+    .person-button {
+      min-height: 68px;
+      margin-bottom: 4px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      transition: background .16s ease, border-color .16s ease, transform .16s ease;
+    }
+
+    .person-button:hover {
+      border-color: rgba(156, 111, 37, .25);
+      background: #f8f0df;
+      transform: translateY(-1px);
+    }
+
+    .person-button.active {
+      border-color: rgba(156, 111, 37, .55);
+      background: linear-gradient(90deg, #fbecd0, #fff8e8);
+      box-shadow: inset 4px 0 0 #9c6f25;
+    }
+
+    .avatar,
+    .hero-avatar {
+      border-radius: 8px;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .24);
+    }
+
+    .stage {
+      position: relative;
+      background:
+        linear-gradient(135deg, rgba(255, 253, 247, .98), rgba(246, 238, 223, .92) 54%, rgba(232, 241, 238, .9)),
+        #fffdf7;
+      border-top: 1px solid rgba(23, 19, 13, .18);
+      box-shadow: 0 26px 70px rgba(37, 31, 24, .14);
+    }
+
+    .stage::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 6px;
+      background: linear-gradient(180deg, #17130d, #9c6f25, #386f66);
+    }
+
+    .stage-inner {
+      padding: clamp(24px, 3.2vw, 42px);
+    }
+
+    .date-row {
+      color: #74695c;
+      letter-spacing: .02em;
+    }
+
+    h2 {
+      font-size: clamp(38px, 4.2vw, 62px);
+      line-height: .96;
+    }
+
+    .role {
+      color: #665b50;
+      font-weight: 650;
+    }
+
+    .headline {
+      max-width: 820px;
+      color: #19130c;
+      font-size: clamp(22px, 2vw, 30px);
+      line-height: 1.22;
+    }
+
+    .chip {
+      min-height: 32px;
+      background: #fffdf7;
+      border-color: #d9c8ad;
+      box-shadow: 0 6px 18px rgba(41, 36, 30, .05);
+    }
+
+    .stage-card {
+      align-self: stretch;
+      border-color: rgba(23, 19, 13, .12);
+      background: rgba(255, 253, 247, .84);
+      box-shadow: 0 12px 32px rgba(41, 36, 30, .07);
+    }
+
+    .stage-card h3 {
+      color: #265e57;
+      letter-spacing: .08em;
+    }
+
+    .detail-panel,
+    .archive-panel {
+      background: #fffdf8;
+    }
+
+    .section-head {
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(23, 19, 13, .09);
+    }
+
+    .section-head h3 {
+      color: #6b5f52;
+      letter-spacing: .11em;
+    }
+
+    .pill {
+      border-color: #d8c9ae;
+      background: #f8f0df;
+      color: #2c251c;
+    }
+
+    .info-card,
+    .timeline,
+    .sources,
+    .proof-panel {
+      border-color: rgba(23, 19, 13, .12);
+      background: #fffefa;
+      box-shadow: 0 10px 28px rgba(41, 36, 30, .045);
+    }
+
+    .info-card {
+      min-height: 190px;
+    }
+
+    .timeline {
+      background: #f8f0df;
+    }
+
+    .proof-panel {
+      background: linear-gradient(180deg, #f9edcb, #fffdf8);
+      border-color: rgba(156, 111, 37, .35);
+    }
+
+    .bullet-list li::before {
+      background: #9c6f25;
+      box-shadow: 0 0 0 3px rgba(156, 111, 37, .12);
+    }
+
+    .whatsapp-panel {
+      top: 96px;
+      border-color: rgba(23, 19, 13, .14);
+      background: #17130d;
+    }
+
+    .message-toolbar {
+      align-items: flex-start;
+      padding: 16px;
+      color: #fff9ec;
+      border-bottom-color: rgba(244, 215, 147, .22);
+      background: #17130d;
+    }
+
+    .message-toolbar h3 {
+      color: #fff9ec;
+      font-size: 17px;
+      letter-spacing: .08em;
+    }
+
+    .message-subtitle {
+      margin: 5px 0 0;
+      max-width: 34ch;
+      color: rgba(255, 249, 236, .68);
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .audience-switcher {
+      display: inline-grid;
+      grid-template-columns: repeat(2, minmax(92px, 1fr));
+      gap: 4px;
+      min-height: 38px;
+      padding: 4px;
+      border: 1px solid rgba(244, 215, 147, .24);
+      border-radius: 8px;
+      background: rgba(255, 249, 236, .08);
+    }
+
+    .audience-tab {
+      min-height: 30px;
+      border: 0;
+      border-radius: 6px;
+      padding: 0 10px;
+      color: rgba(255, 249, 236, .72);
+      background: transparent;
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .audience-tab.active {
+      color: #17130d;
+      background: #f4d793;
+    }
+
+    .teacher-toolkit {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(244, 215, 147, .2);
+    }
+
+    .teacher-toolkit-title {
+      color: #f4d793;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .teacher-toolkit-actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .teacher-toolkit-actions button {
+      min-height: 34px;
+      color: #fff9ec;
+      border-color: rgba(244, 215, 147, .28);
+      background: rgba(255, 249, 236, .08);
+      font-size: 12px;
+    }
+
+    .message-actions button {
+      color: #fff9ec;
+      border-color: rgba(244, 215, 147, .28);
+      background: rgba(255, 249, 236, .08);
+    }
+
+    .message-actions button:hover {
+      border-color: rgba(244, 215, 147, .6);
+    }
+
+    .resource-panel,
+    .coverage-panel {
+      margin-top: 12px;
+      border: 1px solid rgba(56, 111, 102, .22);
+      border-radius: 8px;
+      padding: 16px;
+      background: linear-gradient(180deg, #f4fbf7, #fffefa);
+      box-shadow: 0 10px 28px rgba(41, 36, 30, .045);
+    }
+
+    .coverage-panel {
+      border-color: rgba(31, 58, 82, .22);
+      background: linear-gradient(180deg, #f0f5fb, #fffefa);
+    }
+
+    .official-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .official-link {
+      display: grid;
+      gap: 4px;
+      min-height: 86px;
+      border: 1px solid rgba(23, 19, 13, .1);
+      border-radius: 8px;
+      padding: 10px;
+      color: var(--ink);
+      background: #fffefa;
+      text-decoration: none;
+    }
+
+    .official-link strong {
+      color: #1f3a52;
+      font-family: var(--serif);
+      font-size: 15px;
+      line-height: 1.2;
+    }
+
+    .official-link span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .coverage-card {
+      min-height: 154px;
+      display: grid;
+      align-content: start;
+      gap: 8px;
+      border: 1px solid rgba(23, 19, 13, .11);
+      border-radius: 8px;
+      padding: 12px;
+      background: rgba(255, 254, 250, .9);
+    }
+
+    .coverage-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    .coverage-title span {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: #f7eddb;
+      font-family: var(--sans);
+      font-size: 18px;
+    }
+
+    .coverage-scope,
+    .coverage-status {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.42;
+      font-weight: 750;
+    }
+
+    .coverage-status {
+      color: #244f66;
+    }
+
+    .quality-ledger {
+      display: grid;
+      gap: 8px;
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .quality-ledger li {
+      border: 1px solid rgba(244, 215, 147, .22);
+      border-radius: 8px;
+      padding: 9px 10px;
+      color: rgba(255, 249, 236, .84);
+      background: rgba(255, 249, 236, .055);
+      font-size: 12px;
+      font-weight: 790;
+      line-height: 1.35;
+    }
+
+    .message-frame {
+      padding: 16px;
+      background:
+        linear-gradient(180deg, rgba(244, 215, 147, .08), rgba(56, 111, 102, .08)),
+        #211b14;
+    }
+
+    .message-spark {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 18px;
+      color: #fff9ec;
+      background:
+        linear-gradient(135deg, rgba(244, 215, 147, .18), transparent 38%),
+        linear-gradient(180deg, rgba(255, 249, 236, .08), rgba(255, 249, 236, .03));
+      border-bottom: 1px solid rgba(244, 215, 147, .24);
+      border-radius: 8px 8px 0 0;
+    }
+
+    .spark-kicker {
+      color: #f4d793;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .spark-title {
+      margin: 0;
+      color: #fff9ec;
+      font-family: var(--serif);
+      font-size: 26px;
+      line-height: 1.12;
+      font-weight: 700;
+    }
+
+    .spark-copy {
+      margin: 0;
+      max-width: 58ch;
+      color: rgba(255, 249, 236, .82);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .spark-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .spark-metric {
+      min-height: 58px;
+      display: grid;
+      align-content: center;
+      gap: 3px;
+      padding: 10px;
+      border: 1px solid rgba(244, 215, 147, .22);
+      border-radius: 8px;
+      background: rgba(255, 249, 236, .06);
+    }
+
+    .spark-metric strong {
+      color: #f4d793;
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .spark-metric span {
+      color: rgba(255, 249, 236, .76);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      min-height: 720px;
+      border-color: rgba(244, 215, 147, .3);
+      background: #fffdf7;
+      box-shadow: inset 0 0 0 1px rgba(23, 19, 13, .03), 0 18px 42px rgba(0, 0, 0, .18);
+      font-family: "Avenir Next", "Segoe UI", var(--sans);
+      font-size: 15px;
+      line-height: 1.82;
+    }
+
+    .archive-panel {
+      padding: clamp(20px, 3vw, 32px);
+      box-shadow: 0 24px 70px rgba(31, 28, 23, .12);
+    }
+
+    .archive-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: start;
+    }
+
+    .archive-head h3 {
+      color: #17130d;
+      font-family: var(--serif);
+      font-size: clamp(24px, 2.4vw, 34px);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .archive-head p,
+    .archive-note {
+      max-width: 850px;
+      color: #6b5f52;
+    }
+
+    .archive-stats {
+      gap: 10px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+
+    .archive-stats .stat {
+      min-height: 74px;
+      border: 1px solid rgba(23, 19, 13, .12);
+      border-radius: 8px;
+      background: linear-gradient(180deg, #fffefa, #f7efdf);
+      box-shadow: 0 10px 26px rgba(41, 36, 30, .05);
+    }
+
+    .archive-controls {
+      position: sticky;
+      top: 84px;
+      z-index: 4;
+      margin: 14px 0;
+      border: 1px solid rgba(23, 19, 13, .12);
+      border-radius: 8px;
+      padding: 12px;
+      background: rgba(255, 253, 248, .94);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 14px 34px rgba(41, 36, 30, .08);
+    }
+
+    .archive-controls button {
+      color: #fff9ec;
+      border-color: #17130d;
+      background: #17130d;
+    }
+
+    .archive-table-wrap {
+      max-height: 72vh;
+      border-color: rgba(23, 19, 13, .14);
+      box-shadow: 0 18px 48px rgba(41, 36, 30, .08);
+    }
+
+    .archive-table {
+      font-size: 14.5px;
+    }
+
+    .archive-table th {
+      top: 0;
+      color: #fff9ec;
+      background: #17130d;
+      border-bottom-color: rgba(244, 215, 147, .24);
+      letter-spacing: .08em;
+    }
+
+    .archive-table td {
+      border-bottom-color: rgba(23, 19, 13, .08);
+    }
+
+    .archive-table tbody tr:hover td {
+      background: #fbf2e1;
+    }
+
+    .medalist-name {
+      font-size: 16px;
+    }
+
+    .archive-proof,
+    .archive-open {
+      border-color: rgba(31, 58, 82, .25);
+      background: #eef4f3;
+      color: #1f3a52;
+    }
+
+    .archive-open {
+      display: block;
+      color: #fff9ec;
+      border-color: #386f66;
+      background: #386f66;
+    }
+
+    .archive-spark {
+      display: block;
+      margin-top: 7px;
+      color: #17130d;
+      border-color: #f4d793;
+      background: #f4d793;
+    }
+
+    /* Olympiad Atelier refresh */
+    :root {
+      --atelier-ink: #12100c;
+      --atelier-night: #171411;
+      --atelier-ivory: #fffdf6;
+      --atelier-paper: #faf5e8;
+      --atelier-gold: #d5a94a;
+      --atelier-emerald: #174f47;
+      --atelier-ruby: #7d2d3f;
+      --atelier-blue: #203c66;
+      --atelier-line: rgba(18, 16, 12, .12);
+    }
+
+    body {
+      background:
+        linear-gradient(180deg, rgba(23, 20, 17, .08), transparent 290px),
+        linear-gradient(90deg, rgba(32, 60, 102, .055) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(213, 169, 74, .06) 1px, transparent 1px),
+        #ede7da;
+      background-size: auto, 56px 56px, 56px 56px, auto;
+    }
+
+    .topbar {
+      min-height: 76px;
+      background:
+        linear-gradient(90deg, #12100c, #1c1813 58%, #183d38);
+      border-bottom: 1px solid rgba(213, 169, 74, .34);
+    }
+
+    .brandmark {
+      background: linear-gradient(135deg, #f6dfa0, #bd8d26);
+      border-color: rgba(255, 244, 210, .86);
+      box-shadow: inset 0 0 0 1px rgba(18, 16, 12, .22), 0 10px 24px rgba(0, 0, 0, .25);
+    }
+
+    .brand h1 {
+      font-size: 25px;
+    }
+
+    .view-switcher {
+      border-color: rgba(213, 169, 74, .3);
+      background: rgba(255, 253, 246, .09);
+    }
+
+    .mode-tab.active,
+    .top-actions .primary,
+    .audience-tab.active {
+      background: linear-gradient(135deg, #ffe6a2, #d5a94a) !important;
+      color: #12100c !important;
+      border-color: rgba(255, 230, 162, .72) !important;
+    }
+
+    .main {
+      grid-template-columns: minmax(260px, 330px) minmax(0, 1fr);
+      gap: 24px;
+      padding-top: 26px;
+    }
+
+    .sidebar,
+    .stage,
+    .mission-control,
+    .share-studio,
+    .detail-panel,
+    .whatsapp-panel,
+    .archive-panel {
+      border-color: var(--atelier-line);
+      box-shadow: 0 24px 70px rgba(18, 16, 12, .12);
+    }
+
+    .stage {
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(255, 253, 246, .98), rgba(250, 245, 232, .95) 52%, rgba(232, 241, 238, .96)),
+        #fffdf6;
+      border: 1px solid rgba(213, 169, 74, .22);
+      border-top: 4px solid #171411;
+    }
+
+    .stage::before {
+      width: 8px;
+      background: linear-gradient(180deg, #171411, #d5a94a 45%, #174f47);
+    }
+
+    .stage-inner {
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+      padding: clamp(26px, 3.5vw, 52px);
+    }
+
+    h2 {
+      font-size: clamp(45px, 5.4vw, 84px);
+      line-height: .9;
+      color: #12100c;
+    }
+
+    .headline {
+      max-width: 920px;
+      font-size: clamp(25px, 2.55vw, 40px);
+      line-height: 1.08;
+    }
+
+    .stage-card {
+      align-content: center;
+      gap: 18px;
+      border-color: rgba(213, 169, 74, .28);
+      background:
+        linear-gradient(180deg, rgba(255, 253, 246, .96), rgba(239, 248, 244, .9));
+      box-shadow: 0 18px 42px rgba(23, 20, 17, .09);
+    }
+
+    .stage-card h3 {
+      color: #174f47;
+    }
+
+    .review-badge,
+    .chip {
+      border-radius: 8px;
+    }
+
+    .share-studio {
+      display: grid;
+      grid-template-columns: minmax(0, .74fr) minmax(520px, 1.26fr);
+      gap: 18px;
+      border-radius: 8px;
+      padding: clamp(18px, 2.4vw, 26px);
+      background:
+        linear-gradient(135deg, rgba(23, 20, 17, .96), rgba(23, 20, 17, .91) 48%, rgba(23, 79, 71, .92)),
+        #171411;
+      color: #fffdf6;
+    }
+
+    .share-studio-copy {
+      display: grid;
+      align-content: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .share-kicker {
+      width: fit-content;
+      border: 1px solid rgba(213, 169, 74, .45);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: #ffe6a2;
+      background: rgba(255, 253, 246, .08);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .share-studio-copy h3 {
+      margin: 0;
+      max-width: 520px;
+      font-family: var(--serif);
+      font-size: clamp(25px, 2.8vw, 38px);
+      line-height: 1.05;
+      font-weight: 700;
+    }
+
+    .share-studio-copy p {
+      margin: 0;
+      color: rgba(255, 253, 246, .76);
+      font-size: 14px;
+      line-height: 1.55;
+      font-weight: 720;
+    }
+
+    .share-pack-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .share-card {
+      display: grid;
+      align-content: space-between;
+      gap: 12px;
+      min-height: 190px;
+      border: 1px solid rgba(255, 230, 162, .22);
+      border-radius: 8px;
+      padding: 14px;
+      background: rgba(255, 253, 246, .08);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .07);
+    }
+
+    .share-card strong {
+      display: block;
+      color: #fffdf6;
+      font-family: var(--serif);
+      font-size: 20px;
+      line-height: 1.08;
+    }
+
+    .share-card span {
+      display: block;
+      margin-top: 4px;
+      color: #ffe6a2;
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .share-card p {
+      margin: 0;
+      color: rgba(255, 253, 246, .76);
+      font-size: 12.5px;
+      line-height: 1.42;
+      font-weight: 720;
+    }
+
+    .share-card-actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+    }
+
+    .share-card-actions button {
+      min-height: 34px;
+      border-color: rgba(255, 230, 162, .3);
+      color: #fffdf6;
+      background: rgba(255, 253, 246, .08);
+      font-size: 12px;
+    }
+
+    .share-card-actions button:first-child {
+      color: #12100c;
+      background: linear-gradient(135deg, #ffe6a2, #d5a94a);
+    }
+
+    .mission-control {
+      background:
+        linear-gradient(135deg, rgba(255, 253, 246, .98), rgba(238, 246, 243, .95)),
+        #fffdf6;
+    }
+
+    .mission-copy h3 {
+      font-size: clamp(28px, 3.4vw, 48px);
+    }
+
+    .detail-panel,
+    .archive-panel {
+      background: #fffdf6;
+    }
+
+    .whatsapp-panel {
+      background:
+        linear-gradient(180deg, #171411, #201a13);
+      border-color: rgba(213, 169, 74, .3);
+    }
+
+    .message-toolbar {
+      background: transparent;
+    }
+
+    .message-toolbar h3 {
+      font-family: var(--serif);
+      font-size: 22px;
+      letter-spacing: .04em;
+    }
+
+    .message-frame {
+      background: #171411;
+    }
+
+    .message-spark {
+      background:
+        linear-gradient(135deg, rgba(213, 169, 74, .18), rgba(23, 79, 71, .16)),
+        rgba(255, 253, 246, .055);
+      border: 1px solid rgba(213, 169, 74, .2);
+      border-radius: 8px;
+    }
+
+    textarea {
+      min-height: 640px;
+      border-color: rgba(213, 169, 74, .36);
+      background: #fffdf6;
+    }
+
+    @media (max-width: 1160px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mission-control {
+        grid-template-columns: 1fr;
+      }
+
+      .share-studio {
+        grid-template-columns: 1fr;
+      }
+
+      .archive-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .archive-controls {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .whatsapp-panel {
+        position: static;
+      }
+
+      textarea {
+        min-height: 520px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .topbar {
+        grid-template-columns: 1fr;
+      }
+
+      .view-switcher,
+      .top-actions {
+        grid-column: auto;
+        justify-self: start;
+      }
+
+      .top-actions {
+        justify-content: flex-start;
+      }
+
+      .main {
+        grid-template-columns: 1fr;
+      }
+
+      .workspace {
+        order: 1;
+      }
+
+      .sidebar {
+        order: 2;
+        position: static;
+      }
+
+      .person-list {
+        max-height: 330px;
+      }
+
+      .stage-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .topbar {
+        grid-template-columns: minmax(0, 1fr) minmax(132px, .8fr);
+        gap: 8px;
+        min-height: 0;
+        padding: 8px 12px;
+      }
+
+      .brandmark {
+        width: 32px;
+        height: 32px;
+      }
+
+      .brand h1 {
+        font-size: 18px;
+      }
+
+      .brand p {
+        display: none;
+      }
+
+      .view-switcher {
+        grid-column: 2;
+        width: 100%;
+        min-height: 34px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-self: stretch;
+      }
+
+      .top-actions {
+        grid-column: 1 / -1;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 36px minmax(54px, .65fr) 36px minmax(118px, 1fr);
+        gap: 6px;
+        justify-content: stretch;
+      }
+
+      .mode-tab,
+      .top-actions button {
+        min-height: 32px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .icon-btn {
+        width: 100%;
+      }
+
+      .today-command {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .filter-toggle {
+        display: block;
+      }
+
+      .sidebar.filters-collapsed .filters,
+      .sidebar.filters-collapsed .stat-grid,
+      .sidebar.filters-collapsed .person-list {
+        display: none;
+      }
+
+      .message-actions {
+        width: 100%;
+      }
+
+      .top-actions .primary,
+      .message-actions button {
+        flex: 1 1 auto;
+      }
+
+      .deep-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .archive-stats,
+      .archive-controls,
+      .official-links,
+      .coverage-grid,
+      .mission-grid,
+      .share-pack-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .archive-head {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .archive-head .pill {
+        justify-self: start;
+      }
+
+      .profile-heading,
+      .date-row,
+      .message-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero-avatar {
+        width: 56px;
+        height: 56px;
+      }
+
+      .spark-metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .teacher-toolkit-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .spark-title {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body data-mode="story">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brandmark">OI</div>
+        <div>
+          <h1>The Olympiad Almanac</h1>
+          <p>Daily story studio, teacher lab, and verified archive.</p>
+        </div>
+      </div>
+      <div class="view-switcher" role="tablist" aria-label="Workspace mode">
+        <button class="mode-tab active" data-mode-button="story" type="button" role="tab" aria-selected="true">Story Studio</button>
+        <button class="mode-tab" data-mode-button="archive" type="button" role="tab" aria-selected="false">IMO Sparks</button>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="prevBtn" type="button" title="Previous profile" aria-label="Previous profile">‹</button>
+        <button class="today-command" id="todayBtn" type="button" title="Today's profile" aria-label="Today's profile">Today</button>
+        <button class="icon-btn" id="nextBtn" type="button" title="Next profile" aria-label="Next profile">›</button>
+        <button class="primary" id="copyTopBtn" type="button">Copy WhatsApp</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar" id="profileSidebar" aria-label="Profile library">
+        <button class="filter-toggle" id="filterToggleBtn" type="button">Search and filters</button>
+        <div class="filters">
+          <div class="field">
+            <label for="searchInput">Search</label>
+            <input id="searchInput" type="search" placeholder="Name, domain, country, keyword">
+          </div>
+          <div class="field">
+            <label for="domainFilter">Track</label>
+            <select id="domainFilter"></select>
+          </div>
+          <div class="field">
+            <label for="regionFilter">Review</label>
+            <select id="regionFilter"></select>
+          </div>
+        </div>
+        <div class="stat-grid" id="stats"></div>
+        <div class="person-list" id="profileList"></div>
+      </aside>
+
+      <section class="workspace" aria-live="polite">
+        <article class="stage" data-view="story">
+          <div class="stage-inner">
+            <div>
+              <div class="date-row">
+                <span id="dateLabel"></span>
+                <span id="rotationLabel"></span>
+              </div>
+              <div class="profile-heading">
+                <div class="hero-avatar" id="heroAvatar"></div>
+                <div>
+                  <h2 id="profileName"></h2>
+                  <p class="role" id="profileRole"></p>
+                </div>
+              </div>
+              <p class="headline" id="profileHeadline"></p>
+              <div class="chips" id="chips"></div>
+              <div class="review-badges" id="reviewBadges"></div>
+            </div>
+            <aside class="stage-card">
+              <h3>Daily Classroom Angle</h3>
+              <p id="classroomAngle"></p>
+              <h3>Today's Action</h3>
+              <p id="dailyAction"></p>
+            </aside>
+          </div>
+        </article>
+
+        <section class="share-studio" data-view="story" aria-label="Today's share pack">
+          <div class="share-studio-copy">
+            <span class="share-kicker">Today's Share Pack</span>
+            <h3>Send the right message to the right audience in seconds.</h3>
+            <p>
+              One verified story becomes a student spark, a teacher lab, and a parent note.
+              The full source library stays on the website; WhatsApp stays elegant.
+            </p>
+          </div>
+          <div class="share-pack-grid" id="sharePackGrid"></div>
+        </section>
+
+        <section class="mission-control" data-view="story" aria-label="Olympiad intelligence coverage">
+          <div class="mission-copy">
+            <span class="mission-kicker">Olympiad Atelier</span>
+            <h3>A premium daily ritual for proof, courage, and serious thinking.</h3>
+            <p>
+              Deep verified stories, teacher-ready prompts, parent-friendly notes, and official archive sparks
+              stay separated so every share feels intentional, respectful, and useful.
+            </p>
+          </div>
+          <div class="mission-grid" id="missionGrid"></div>
+        </section>
+
+        <section class="content-grid" data-view="story">
+          <article class="detail-panel">
+            <div class="section-head">
+              <h3>Deep Profile</h3>
+              <span class="pill" id="sourceCount"></span>
+            </div>
+            <div class="deep-grid">
+              <section class="info-card">
+                <h4>Why This Person Is Popular</h4>
+                <ul class="bullet-list" id="whyPopular"></ul>
+              </section>
+              <section class="info-card">
+                <h4>Olympiad Background</h4>
+                <ul class="bullet-list" id="olympiad"></ul>
+              </section>
+              <section class="info-card">
+                <h4>Public Achievement</h4>
+                <ul class="bullet-list" id="impact"></ul>
+              </section>
+              <section class="info-card">
+                <h4>Why Growth Became Fast</h4>
+                <ul class="bullet-list" id="growthDrivers"></ul>
+              </section>
+            </div>
+
+            <section class="timeline">
+              <h4>Trajectory</h4>
+              <ul class="timeline-list" id="trajectory"></ul>
+            </section>
+
+            <section class="timeline">
+              <h4>Connect The Dots For Indian Students</h4>
+              <ul class="timeline-list" id="indiaConnect"></ul>
+            </section>
+
+            <section class="proof-panel">
+              <h4>Authenticity / Official Proof</h4>
+              <ul class="proof-list" id="proofList"></ul>
+            </section>
+
+            <div class="coaching-note" id="coachingNote"></div>
+
+            <section class="sources">
+              <div class="section-head">
+                <h3>Sources And Confidence</h3>
+                <span class="pill" id="qualityPill"></span>
+              </div>
+              <ul class="source-list" id="sourceList"></ul>
+              <p class="quality" id="qualityNote"></p>
+            </section>
+
+            <section class="resource-panel">
+              <div class="section-head">
+                <h3>Olympiad Resource Desk</h3>
+                <span class="pill">Primary links</span>
+              </div>
+              <div class="official-links" id="officialLinks"></div>
+            </section>
+
+            <section class="coverage-panel">
+              <div class="section-head">
+                <h3>Research Coverage Map</h3>
+                <span class="pill">Source-gated</span>
+              </div>
+              <div class="coverage-grid" id="coverageGrid"></div>
+              <p class="quality">
+                Editorial rule: add a person only when the Olympiad claim and public achievement can be supported by
+                credible links. No negative coaching note is shown when a coaching-specific source is missing.
+              </p>
+            </section>
+          </article>
+
+          <aside class="whatsapp-panel">
+            <div class="message-toolbar">
+              <div>
+                <h3>Share Studio</h3>
+                <p class="message-subtitle" id="audienceHint"></p>
+              </div>
+              <div class="message-actions">
+                <div class="audience-switcher" id="messageModeTabs" role="tablist" aria-label="Message mode">
+                  <button class="audience-tab" data-message-mode-button="royal-short" type="button" role="tab" aria-selected="false">Royal Short</button>
+                  <button class="audience-tab active" data-message-mode-button="student-deep" type="button" role="tab" aria-selected="true">Student Deep</button>
+                  <button class="audience-tab" data-message-mode-button="teacher-lab" type="button" role="tab" aria-selected="false">Teacher Lab</button>
+                  <button class="audience-tab" data-message-mode-button="parent-note" type="button" role="tab" aria-selected="false">Parent Note</button>
+                </div>
+                <button id="copyMessageBtn" type="button">Copy Student Deep</button>
+                <button id="copySourcesBtn" type="button">Official Links</button>
+              </div>
+            </div>
+            <div class="message-frame">
+              <div class="message-spark">
+                <span class="spark-kicker" id="sparkKicker"></span>
+                <h3 class="spark-title" id="sparkTitle"></h3>
+                <p class="spark-copy" id="sparkCopy"></p>
+                <div class="spark-metrics" aria-label="Message quality markers">
+                  <div class="spark-metric">
+                    <strong id="sparkLens"></strong>
+                    <span id="sparkLensLabel">Student lens</span>
+                  </div>
+                  <div class="spark-metric">
+                    <strong id="sparkProofs"></strong>
+                    <span>Proof links</span>
+                  </div>
+                  <div class="spark-metric">
+                    <strong id="sparkSources"></strong>
+                    <span>Sources</span>
+                  </div>
+                </div>
+                <ul class="quality-ledger" id="qualityLedger"></ul>
+                <div class="teacher-toolkit" id="teacherToolkit" aria-label="Teacher toolkit copy buttons">
+                  <span class="teacher-toolkit-title">Teacher Toolkit</span>
+                  <div class="teacher-toolkit-actions">
+                    <button type="button" data-toolkit-copy="opening">Opening line</button>
+                    <button type="button" data-toolkit-copy="board">Board activity</button>
+                    <button type="button" data-toolkit-copy="flow">5-min flow</button>
+                    <button type="button" data-toolkit-copy="homework">Homework prompt</button>
+                    <button type="button" data-toolkit-copy="reflection">Reflection question</button>
+                  </div>
+                </div>
+              </div>
+              <textarea id="messageText" readonly spellcheck="false"></textarea>
+            </div>
+          </aside>
+        </section>
+
+        <section class="archive-panel" id="medalistArchive" data-view="archive">
+          <div class="section-head archive-head">
+            <div>
+              <h3>Verified IMO Medalist Directory</h3>
+              <p id="archiveCoverage"></p>
+              <p class="archive-note">
+                Every row can now become a compact WhatsApp motivation spark. Deep public-impact stories remain
+                curated; archive sparks use only verified IMO facts and official proof links.
+              </p>
+            </div>
+            <span class="pill" id="archiveCount"></span>
+          </div>
+          <div class="archive-stats" id="archiveStats"></div>
+          <div class="archive-controls">
+            <div class="field">
+              <label for="archiveSearchInput">Archive Search</label>
+              <input id="archiveSearchInput" type="search" placeholder="Name, country, year, award">
+            </div>
+            <div class="field">
+              <label for="archiveAwardFilter">Prize</label>
+              <select id="archiveAwardFilter"></select>
+            </div>
+            <div class="field">
+              <label for="archiveCountryFilter">Country</label>
+              <select id="archiveCountryFilter"></select>
+            </div>
+            <button id="archiveOfficialBtn" type="button">Open IMO Results</button>
+          </div>
+          <div class="archive-table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Best Prize</th>
+                  <th>Verified Record</th>
+                  <th>Country / Years</th>
+                  <th>Proof / Spark</th>
+                </tr>
+              </thead>
+              <tbody id="archiveBody"></tbody>
+            </table>
+          </div>
+          <p class="archive-note" id="archiveNote"></p>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script>
+    const profiles = Array.isArray(window.OLYMPIAD_PROFILES) ? window.OLYMPIAD_PROFILES : [];
+    const ARCHIVE_SUMMARY = {
+      coverage: "1959-2025",
+      sourceName: "International Mathematical Olympiad official results",
+      sourceUrl: "https://www.imo-official.org/results/",
+      people: 10208,
+      records: 15086,
+      gold: 1845,
+      silver: 3731,
+      bronze: 5499,
+      hm: 4011,
+      countryPagesChecked: 141
+    };
+    let medalistArchive = window.IMO_MEDALIST_DIRECTORY || {};
+    let medalists = Array.isArray(medalistArchive.medalists) ? medalistArchive.medalists : [];
+    let archiveLoadPromise = null;
+    const AWARD_LABELS = {
+      gold: "Gold",
+      silver: "Silver",
+      bronze: "Bronze",
+      hm: "Hon. Mention"
+    };
+    const OFFICIAL_OLYMPIAD_RESOURCES = [
+      {
+        tag: "IMO",
+        label: "IMO Results",
+        note: "Official mathematics results, contestant search, and country archive.",
+        url: "https://www.imo-official.org/results/"
+      },
+      {
+        tag: "India",
+        label: "HBCSE Olympiads",
+        note: "Official Indian pathway for Mathematics, Physics, Chemistry, Biology, Astronomy, and Junior Science.",
+        url: "https://olympiads.hbcse.tifr.res.in/"
+      },
+      {
+        tag: "IOQM",
+        label: "IOQM Portal",
+        note: "Official first-stage mathematics qualifier information for India.",
+        url: "https://ioqm.mtai.org.in/"
+      },
+      {
+        tag: "IOI",
+        label: "IOI Official",
+        note: "International Olympiad in Informatics organization, syllabus, and annual event information.",
+        url: "https://ioinformatics.org/"
+      },
+      {
+        tag: "IOI Stats",
+        label: "Contestant Records",
+        note: "Informatics contestant, task, country, and medal records.",
+        url: "https://stats.ioinformatics.org/"
+      },
+      {
+        tag: "IPhO",
+        label: "IPhO Official",
+        note: "Official physics olympiad site, statutes, syllabus, and documentation.",
+        url: "https://www.ipho-new.org/"
+      },
+      {
+        tag: "IChO",
+        label: "IChO Steering Committee",
+        note: "Chemistry olympiad regulations, countries, and mentor/student information.",
+        url: "https://www.ichosc.org/"
+      },
+      {
+        tag: "IBO",
+        label: "International Biology Olympiad",
+        note: "Official biology olympiad mission, participation, reports, and member information.",
+        url: "https://www.ibo-info.org/"
+      },
+      {
+        tag: "IOAA",
+        label: "Astronomy And Astrophysics",
+        note: "Official astronomy and astrophysics olympiad site with resources and event information.",
+        url: "https://ioaastrophysics.org/"
+      },
+      {
+        tag: "IJSO",
+        label: "Junior Science Olympiad",
+        note: "Official junior science olympiad site with syllabus, events, and past results.",
+        url: "https://www.ijsoweb.org/"
+      },
+      {
+        tag: "IOAI",
+        label: "International Olympiad in AI",
+        note: "Official AI olympiad for high-school students and national organizations.",
+        url: "https://ioai-official.org/"
+      },
+      {
+        tag: "AIMO",
+        label: "AIMO Prize",
+        note: "AI Mathematical Olympiad prize for IMO-level mathematical reasoning by AI models.",
+        url: "https://aimoprize.com/"
+      },
+      {
+        tag: "AIMO Open",
+        label: "Asia AIMO Platform",
+        note: "Asia International Mathematical Olympiad learning and event platform.",
+        url: "https://aimo.world/"
+      }
+    ];
+
+    const COVERAGE_STREAMS = [
+      {
+        icon: "📐",
+        title: "Mathematics Track",
+        scope: "IOQM / INMO / IMO / AIMO",
+        status: "Full verified IMO archive is live; curated stories are linked only when proof exists."
+      },
+      {
+        icon: "💻",
+        title: "Informatics Track",
+        scope: "IOI / algorithms / AI engineering",
+        status: "IOI official and stats links are live; founder stories stay source-backed."
+      },
+      {
+        icon: "🔬",
+        title: "Physics Track",
+        scope: "IPhO / astronomy / experimental reasoning",
+        status: "Primary IPhO and IOAA resources are live; profile expansion remains proof-gated."
+      },
+      {
+        icon: "⚗️",
+        title: "Chemistry And Biology",
+        scope: "IChO / IBO / laboratory thinking",
+        status: "Official resource links are live so teachers can guide students beyond mathematics."
+      },
+      {
+        icon: "🧠",
+        title: "AI And Research",
+        scope: "OpenAI / mathematical reasoning / IOAI",
+        status: "AI stories focus on habits: reliability, proof, models, and careful evaluation."
+      },
+      {
+        icon: "🔐",
+        title: "Blockchain And Systems",
+        scope: "cryptography / distributed systems / startups",
+        status: "Added only where Olympiad background and public work can be supported by credible links."
+      }
+    ];
+
+    const QUALITY_LEDGER = [
+      "Verified Olympiad proof close to the person whenever available.",
+      "Student mode teaches courage, patience, and daily action, not celebrity worship.",
+      "Teacher mode respects the teacher and gives a classroom flow, not a lecture to teachers.",
+      "Coaching-specific claims stay hidden unless supported by a credible source."
+    ];
+
+    const TRACK_FILTERS = [
+      { value: "all", label: "All tracks" },
+      { value: "math", label: "Math" },
+      { value: "coding", label: "Coding" },
+      { value: "ai", label: "AI" },
+      { value: "physics", label: "Physics/Astronomy" },
+      { value: "chem-bio", label: "Chemistry/Biology" },
+      { value: "crypto-systems", label: "Crypto/Systems" },
+      { value: "education", label: "Education" },
+      { value: "india", label: "India-linked" }
+    ];
+
+    const REVIEW_FILTERS = [
+      { value: "all", label: "All review states" },
+      { value: "published", label: "Published" },
+      { value: "needs-review", label: "Needs review" }
+    ];
+
+    const MESSAGE_MODES = {
+      "royal-short": "Royal Short",
+      "student-deep": "Student Deep",
+      "teacher-lab": "Teacher Lab",
+      "parent-note": "Parent Note"
+    };
+
+    function normalizeText(value) {
+      return String(value || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+    }
+
+    const state = {
+      activeId: getTodayProfile()?.id || profiles[0]?.id || "",
+      query: "",
+      track: "all",
+      review: "all",
+      mode: "story",
+      archiveQuery: "",
+      archiveAward: "all",
+      archiveCountry: "all",
+      messageMode: "student-deep"
+    };
+
+    const els = {
+      sidebar: document.getElementById("profileSidebar"),
+      filterToggleBtn: document.getElementById("filterToggleBtn"),
+      searchInput: document.getElementById("searchInput"),
+      domainFilter: document.getElementById("domainFilter"),
+      regionFilter: document.getElementById("regionFilter"),
+      stats: document.getElementById("stats"),
+      profileList: document.getElementById("profileList"),
+      prevBtn: document.getElementById("prevBtn"),
+      todayBtn: document.getElementById("todayBtn"),
+      nextBtn: document.getElementById("nextBtn"),
+      copyTopBtn: document.getElementById("copyTopBtn"),
+      copyMessageBtn: document.getElementById("copyMessageBtn"),
+      copySourcesBtn: document.getElementById("copySourcesBtn"),
+      audienceHint: document.getElementById("audienceHint"),
+      messageModeButtons: document.querySelectorAll("[data-message-mode-button]"),
+      toolkitButtons: document.querySelectorAll("[data-toolkit-copy]"),
+      modeButtons: document.querySelectorAll("[data-mode-button]"),
+      dateLabel: document.getElementById("dateLabel"),
+      rotationLabel: document.getElementById("rotationLabel"),
+      heroAvatar: document.getElementById("heroAvatar"),
+      profileName: document.getElementById("profileName"),
+      profileRole: document.getElementById("profileRole"),
+      profileHeadline: document.getElementById("profileHeadline"),
+      chips: document.getElementById("chips"),
+      reviewBadges: document.getElementById("reviewBadges"),
+      classroomAngle: document.getElementById("classroomAngle"),
+      dailyAction: document.getElementById("dailyAction"),
+      sourceCount: document.getElementById("sourceCount"),
+      whyPopular: document.getElementById("whyPopular"),
+      olympiad: document.getElementById("olympiad"),
+      impact: document.getElementById("impact"),
+      growthDrivers: document.getElementById("growthDrivers"),
+      trajectory: document.getElementById("trajectory"),
+      indiaConnect: document.getElementById("indiaConnect"),
+      proofList: document.getElementById("proofList"),
+      coachingNote: document.getElementById("coachingNote"),
+      sourceList: document.getElementById("sourceList"),
+      officialLinks: document.getElementById("officialLinks"),
+      sharePackGrid: document.getElementById("sharePackGrid"),
+      missionGrid: document.getElementById("missionGrid"),
+      coverageGrid: document.getElementById("coverageGrid"),
+      qualityPill: document.getElementById("qualityPill"),
+      qualityNote: document.getElementById("qualityNote"),
+      sparkKicker: document.getElementById("sparkKicker"),
+      sparkTitle: document.getElementById("sparkTitle"),
+      sparkCopy: document.getElementById("sparkCopy"),
+      sparkLens: document.getElementById("sparkLens"),
+      sparkLensLabel: document.getElementById("sparkLensLabel"),
+      sparkProofs: document.getElementById("sparkProofs"),
+      sparkSources: document.getElementById("sparkSources"),
+      qualityLedger: document.getElementById("qualityLedger"),
+      messageText: document.getElementById("messageText"),
+      archiveCoverage: document.getElementById("archiveCoverage"),
+      archiveCount: document.getElementById("archiveCount"),
+      archiveStats: document.getElementById("archiveStats"),
+      archiveSearchInput: document.getElementById("archiveSearchInput"),
+      archiveAwardFilter: document.getElementById("archiveAwardFilter"),
+      archiveCountryFilter: document.getElementById("archiveCountryFilter"),
+      archiveBody: document.getElementById("archiveBody"),
+      archiveNote: document.getElementById("archiveNote"),
+      archiveOfficialBtn: document.getElementById("archiveOfficialBtn"),
+      toast: document.getElementById("toast")
+    };
+
+    function getIndiaDateParts(date = new Date()) {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Kolkata",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(date);
+      return Object.fromEntries(parts.map((part) => [part.type, part.value]));
+    }
+
+    function getTodayIndex() {
+      const rotationProfiles = publishedProfiles();
+      if (!rotationProfiles.length) return 0;
+      const parts = getIndiaDateParts();
+      const current = Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
+      const start = Date.UTC(Number(parts.year), 0, 1);
+      const day = Math.floor((current - start) / 86400000) + 1;
+      return (day - 1) % rotationProfiles.length;
+    }
+
+    function profileReview(profile) {
+      return profile.review || {
+        olympiadProof: "needs-stronger-proof",
+        impactProof: "needs-stronger-source",
+        teacherReady: false,
+        status: "needs-review",
+        notes: "Review metadata missing."
+      };
+    }
+
+    function profileStatus(profile) {
+      return profileReview(profile).status === "published" ? "published" : "needs-review";
+    }
+
+    function publishedProfiles() {
+      return profiles.filter((profile) => profileStatus(profile) === "published");
+    }
+
+    function getTodayProfile() {
+      const rotationProfiles = publishedProfiles();
+      return rotationProfiles[getTodayIndex()] || rotationProfiles[0] || profiles[0];
+    }
+
+    function formatIndiaDate() {
+      return new Intl.DateTimeFormat("en-IN", {
+        timeZone: "Asia/Kolkata",
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      }).format(new Date());
+    }
+
+    function buildOptions(select, values, label) {
+      select.innerHTML = "";
+      const all = document.createElement("option");
+      all.value = "all";
+      all.textContent = `All ${label}`;
+      select.append(all);
+      values.forEach((value) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        select.append(option);
+      });
+    }
+
+    function domainClass(profile) {
+      const text = `${profile.domain} ${profile.role}`.toLowerCase();
+      if (text.includes("crypto") || text.includes("blockchain")) return "crypto";
+      if (text.includes("ai") || text.includes("data")) return "ai";
+      if (text.includes("physics") || text.includes("astronomy")) return "science";
+      return "math";
+    }
+
+    function activeProfile() {
+      return profiles.find((profile) => profile.id === state.activeId) || profiles[0];
+    }
+
+    function safeCoachingConnect(profile) {
+      const note = String(profile.coachingConnect || "").trim();
+      if (!note) return "";
+      const lower = note.toLowerCase();
+      const internalWarning = [
+        "no verified",
+        "not verified",
+        "not included",
+        "not added",
+        "avoid allen",
+        "avoid wording",
+        "unless a primary",
+        "no allen-specific"
+      ].some((phrase) => lower.includes(phrase));
+      return internalWarning ? "" : note;
+    }
+
+    function trackText(profile) {
+      return [
+        profile.name,
+        profile.country,
+        profile.region,
+        profile.domain,
+        profile.role,
+        profile.headline,
+        ...(profile.olympiad || []),
+        ...(profile.impact || []),
+        ...(profile.indiaConnect || [])
+      ].join(" ").toLowerCase();
+    }
+
+    function matchesTrack(profile, track) {
+      if (track === "all") return true;
+      const text = trackText(profile);
+      if (track === "india") return text.includes("india") || text.includes("indian");
+      if (track === "math") return /math|geometry|number theory|combinatorics|imo|inmo|ioqm|proof|fields medal/.test(text);
+      if (track === "coding") return /coding|programming|informatics|ioi|algorithm|software|usaco/.test(text);
+      if (track === "ai") return /\\bai\\b|openai|deep learning|machine learning|reasoning|cognition/.test(text);
+      if (track === "physics") return /physics|astronomy|astrophysics|ipho|ioaa|models/.test(text);
+      if (track === "chem-bio") return /chemistry|biology|icho|ibo|lab/.test(text);
+      if (track === "crypto-systems") return /crypto|blockchain|security|secure|systems|protocol|distributed/.test(text);
+      if (track === "education") return /education|teacher|teaching|public writing|communication|mentor|classroom/.test(text);
+      return true;
+    }
+
+    function searchText(profile) {
+      return [
+        profile.name,
+        profile.country,
+        profile.region,
+        profile.domain,
+        profile.role,
+        profile.headline,
+        ...(profile.whyPopular || []),
+        ...(profile.olympiad || []),
+        ...(profile.impact || []),
+        ...(profile.indiaConnect || []),
+        ...(profile.proofLinks || []).flatMap((proof) => [proof.label, proof.detail, proof.url]),
+        safeCoachingConnect(profile)
+      ].join(" ").toLowerCase();
+    }
+
+    function getFilteredProfiles() {
+      const q = state.query.trim().toLowerCase();
+      return profiles.filter((profile) => {
+        const trackMatch = matchesTrack(profile, state.track);
+        const reviewMatch = state.review === "all" || profileStatus(profile) === state.review;
+        return trackMatch && reviewMatch && (!q || searchText(profile).includes(q));
+      });
+    }
+
+    function makeListItem(text) {
+      const item = document.createElement("li");
+      item.textContent = text;
+      return item;
+    }
+
+    function getProofLinks(profile) {
+      if (Array.isArray(profile.proofLinks) && profile.proofLinks.length) {
+        return profile.proofLinks;
+      }
+
+      const officialSources = (profile.sources || []).filter((source) => {
+        const text = `${source.label} ${source.type}`.toLowerCase();
+        return text.includes("official") || text.includes("university") || text.includes("award") || text.includes("openai");
+      });
+
+      return (officialSources.length ? officialSources : profile.sources || []).slice(0, 3).map((source) => ({
+        label: source.label,
+        detail: source.type,
+        url: source.url
+      }));
+    }
+
+    function renderList(target, items) {
+      target.innerHTML = "";
+      (items || []).forEach((text) => target.append(makeListItem(text)));
+    }
+
+    function renderProofLinks(profile) {
+      els.proofList.innerHTML = "";
+      getProofLinks(profile).forEach((proof) => {
+        const item = document.createElement("li");
+        const title = document.createElement("strong");
+        const detail = document.createElement("span");
+        const link = document.createElement("a");
+        title.textContent = proof.label;
+        detail.className = "proof-detail";
+        detail.textContent = proof.detail;
+        link.href = proof.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = proof.url;
+        item.append(title, detail, link);
+        els.proofList.append(item);
+      });
+    }
+
+    function makeChip(text) {
+      const chip = document.createElement("span");
+      chip.className = "chip";
+      chip.textContent = text;
+      return chip;
+    }
+
+    function renderStats() {
+      const indian = profiles.filter((profile) => profile.region.includes("India")).length;
+      const sources = profiles.reduce((count, profile) => count + (profile.sources?.length || 0), 0);
+      const proofReceipts = profiles.reduce((count, profile) => count + getProofLinks(profile).length, 0);
+      const published = profiles.filter((profile) => profileStatus(profile) === "published").length;
+      const needsReview = profiles.length - published;
+      els.stats.innerHTML = "";
+      [
+        [profiles.length, "profiles"],
+        [published, "published"],
+        [needsReview, "needs review"],
+        [formatNumber(medalistArchive.totals?.people || ARCHIVE_SUMMARY.people), "IMO archive"],
+        [proofReceipts, "proof receipts"],
+        [getFilteredProfiles().length, "showing"]
+      ].forEach(([value, label]) => {
+        const stat = document.createElement("div");
+        stat.className = "stat";
+        stat.innerHTML = `<strong>${value}</strong><span>${label}</span>`;
+        els.stats.append(stat);
+      });
+    }
+
+    function renderMissionGrid() {
+      const sources = profiles.reduce((count, profile) => count + (profile.sources?.length || 0), 0);
+      const proofReceipts = profiles.reduce((count, profile) => count + getProofLinks(profile).length, 0);
+      const totals = medalistArchive.totals || ARCHIVE_SUMMARY;
+      const published = profiles.filter((profile) => profileStatus(profile) === "published").length;
+      const needsReview = profiles.length - published;
+      const metrics = [
+        [`${published}/${profiles.length}`, "Published stories", `${needsReview} profiles are searchable but held out of daily rotation.`],
+        [formatNumber(totals.people || ARCHIVE_SUMMARY.people), "Archive sparks", "Search official IMO people and copy verified motivation sparks."],
+        [OFFICIAL_OLYMPIAD_RESOURCES.length, "Resource streams", "Math, physics, chemistry, biology, astronomy, informatics, AI."],
+        [proofReceipts, "Proof receipts", `${sources} total profile source links kept inside the studio.`]
+      ];
+
+      els.missionGrid.innerHTML = "";
+      metrics.forEach(([value, label, note]) => {
+        const item = document.createElement("article");
+        item.className = "mission-stat";
+        item.innerHTML = `<strong>${value}</strong><span>${label}</span><small>${note}</small>`;
+        els.missionGrid.append(item);
+      });
+    }
+
+    function renderCoverageGrid() {
+      els.coverageGrid.innerHTML = "";
+      COVERAGE_STREAMS.forEach((stream) => {
+        const item = document.createElement("article");
+        item.className = "coverage-card";
+        item.innerHTML = [
+          `<div class="coverage-title"><span>${stream.icon}</span>${stream.title}</div>`,
+          `<p class="coverage-scope"><strong>Scope:</strong> ${stream.scope}</p>`,
+          `<p class="coverage-status"><strong>Status:</strong> ${stream.status}</p>`
+        ].join("");
+        els.coverageGrid.append(item);
+      });
+    }
+
+    function renderSharePack(profile) {
+      const packs = [
+        {
+          mode: "royal-short",
+          title: "Royal Short",
+          label: "Student broadcast",
+          copy: "A compact premium story for daily WhatsApp sharing."
+        },
+        {
+          mode: "teacher-lab",
+          title: "Teacher Lab",
+          label: "Classroom ready",
+          copy: "Opening line, class flow, board map, and reflection framing."
+        },
+        {
+          mode: "parent-note",
+          title: "Parent Note",
+          label: "Home encouragement",
+          copy: "A respectful note about patience, effort, and long-term thinking."
+        }
+      ];
+
+      els.sharePackGrid.innerHTML = "";
+      packs.forEach((pack) => {
+        const card = document.createElement("article");
+        const head = document.createElement("div");
+        const title = document.createElement("strong");
+        const label = document.createElement("span");
+        const copy = document.createElement("p");
+        const actions = document.createElement("div");
+        const copyButton = document.createElement("button");
+        const whatsappButton = document.createElement("button");
+
+        card.className = "share-card share-pack-card";
+        card.dataset.shareMode = pack.mode;
+        actions.className = "share-card-actions";
+        title.textContent = pack.title;
+        label.textContent = pack.label;
+        copy.textContent = pack.copy;
+        copyButton.type = "button";
+        copyButton.className = "share-action";
+        copyButton.dataset.shareAction = "copy";
+        copyButton.dataset.shareMode = pack.mode;
+        copyButton.textContent = "Copy";
+        whatsappButton.type = "button";
+        whatsappButton.className = "share-action";
+        whatsappButton.dataset.shareAction = "whatsapp";
+        whatsappButton.dataset.shareMode = pack.mode;
+        whatsappButton.textContent = "WhatsApp";
+
+        copyButton.addEventListener("click", () => {
+          copyText(formatWhatsApp(profile, pack.mode), `${pack.title} message`);
+        });
+        whatsappButton.addEventListener("click", () => {
+          const text = encodeURIComponent(formatWhatsApp(profile, pack.mode));
+          window.open(`https://wa.me/?text=${text}`, "_blank", "noreferrer");
+        });
+
+        head.append(title, label);
+        actions.append(copyButton, whatsappButton);
+        card.append(head, copy, actions);
+        els.sharePackGrid.append(card);
+      });
+    }
+
+    function renderProfileList() {
+      const filtered = getFilteredProfiles();
+      els.profileList.innerHTML = "";
+      filtered.forEach((profile) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `person-button ${profile.id === state.activeId ? "active" : ""}`;
+        button.setAttribute("aria-label", `Open ${profile.name}`);
+
+        const avatar = document.createElement("span");
+        avatar.className = `avatar ${domainClass(profile)}`;
+        avatar.textContent = profile.initials;
+
+        const copy = document.createElement("span");
+        copy.className = "person-copy";
+        const name = document.createElement("span");
+        name.className = "person-name";
+        name.textContent = profile.name;
+        const meta = document.createElement("span");
+        meta.className = "person-meta";
+        meta.textContent = `${profile.domain} | ${profile.country} | ${profileStatus(profile) === "published" ? "Published" : "Needs review"}`;
+        copy.append(name, meta);
+        button.append(avatar, copy);
+        button.addEventListener("click", () => {
+          state.activeId = profile.id;
+          render();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        els.profileList.append(button);
+      });
+
+      if (!filtered.length) {
+        const empty = document.createElement("p");
+        empty.className = "empty";
+        empty.textContent = "No profiles match this filter.";
+        els.profileList.append(empty);
+      }
+    }
+
+    function formatNumber(value) {
+      return Number(value || 0).toLocaleString("en-IN");
+    }
+
+    function loadMedalistArchive() {
+      if (medalists.length) return Promise.resolve(medalistArchive);
+      if (archiveLoadPromise) return archiveLoadPromise;
+      els.archiveCoverage.textContent = "Loading official IMO archive. The daily story stays usable while this loads.";
+      els.archiveCount.textContent = "Loading";
+      archiveLoadPromise = new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "data/imo-medalist-directory-20260630.js";
+        script.async = true;
+        script.onload = () => {
+          medalistArchive = window.IMO_MEDALIST_DIRECTORY || {};
+          medalists = Array.isArray(medalistArchive.medalists) ? medalistArchive.medalists : [];
+          initArchiveFilters();
+          renderStats();
+          renderMissionGrid();
+          resolve(medalistArchive);
+        };
+        script.onerror = () => {
+          archiveLoadPromise = null;
+          reject(new Error("Unable to load IMO archive data."));
+        };
+        document.head.append(script);
+      });
+      return archiveLoadPromise;
+    }
+
+    function awardClass(award) {
+      return `award-badge award-${award || "hm"}`;
+    }
+
+    function awardSummary(person) {
+      const parts = ["gold", "silver", "bronze", "hm"]
+        .filter((award) => person.awards?.[award])
+        .map((award) => `${AWARD_LABELS[award]} ${person.awards[award]}`);
+      if (person.perfectScores) parts.push(`Perfect ${person.perfectScores}`);
+      return parts.join(" | ");
+    }
+
+    function profileForMedalist(person) {
+      const officialNeedle = `/results/contestant/${person.id}/`;
+      const byOfficialLink = profiles.find((profile) => {
+        const links = [
+          ...(profile.proofLinks || []).map((proof) => proof.url),
+          ...(profile.sources || []).map((source) => source.url)
+        ];
+        return links.some((url) => url.includes(officialNeedle));
+      });
+      if (byOfficialLink) return byOfficialLink;
+
+      const medalistName = normalizeText(person.name);
+      return profiles.find((profile) => {
+        const profileName = normalizeText(profile.name);
+        return medalistName.includes(profileName) || profileName.includes(medalistName);
+      });
+    }
+
+    function reviewBadgeItems(profile) {
+      const review = profileReview(profile);
+      return [
+        {
+          label: review.olympiadProof === "verified-direct" ? "Olympiad proof verified" : review.olympiadProof === "verified-source" ? "Olympiad source verified" : "Needs stronger proof",
+          tone: review.olympiadProof === "verified-direct" ? "ok" : review.olympiadProof === "verified-source" ? "warning" : "needs"
+        },
+        {
+          label: review.impactProof === "verified" ? "Public impact verified" : "Needs impact source",
+          tone: review.impactProof === "verified" ? "ok" : "needs"
+        },
+        {
+          label: review.teacherReady ? "Teacher-ready" : "Teacher draft",
+          tone: review.teacherReady ? "ok" : "warning"
+        },
+        {
+          label: review.status === "published" ? "Published rotation" : "Needs review",
+          tone: review.status === "published" ? "ok" : "needs"
+        }
+      ];
+    }
+
+    function renderReviewBadges(profile) {
+      els.reviewBadges.innerHTML = "";
+      reviewBadgeItems(profile).forEach((badge) => {
+        const item = document.createElement("span");
+        item.className = `review-badge ${badge.tone === "ok" ? "" : badge.tone}`.trim();
+        item.textContent = badge.label;
+        els.reviewBadges.append(item);
+      });
+    }
+
+    function medalistSearchText(person) {
+      return normalizeText([
+        person.name,
+        person.bestAward,
+        ...(person.countries || []),
+        ...(person.countryCodes || []),
+        ...(person.years || []),
+        awardSummary(person)
+      ].join(" "));
+    }
+
+    function getFilteredMedalists() {
+      const query = normalizeText(state.archiveQuery);
+      return medalists.filter((person) => {
+        const awardMatch = state.archiveAward === "all" || person.records.some((record) => record.award === state.archiveAward);
+        const countryMatch = state.archiveCountry === "all" || person.countries.includes(state.archiveCountry);
+        return awardMatch && countryMatch && (!query || medalistSearchText(person).includes(query));
+      });
+    }
+
+    function renderArchiveStats() {
+      const totals = medalistArchive.totals || ARCHIVE_SUMMARY;
+      els.archiveStats.innerHTML = "";
+      [
+        [medalistArchive.coverage || ARCHIVE_SUMMARY.coverage, "official years"],
+        [formatNumber(totals.people), "verified people"],
+        [formatNumber(totals.gold), "gold records"],
+        [formatNumber(totals.silver), "silver records"],
+        [formatNumber(totals.bronze), "bronze records"],
+        [formatNumber(totals.hm), "hon. mentions"]
+      ].forEach(([value, label]) => {
+        const stat = document.createElement("div");
+        stat.className = "stat";
+        stat.innerHTML = `<strong>${value}</strong><span>${label}</span>`;
+        els.archiveStats.append(stat);
+      });
+    }
+
+    function renderMedalistArchive() {
+      if (!medalists.length) {
+        els.archiveCoverage.textContent = `Official IMO archive will load when this tab opens. Coverage ${ARCHIVE_SUMMARY.coverage}; ${formatNumber(ARCHIVE_SUMMARY.people)} verified people.`;
+        els.archiveCount.textContent = "Tap to load";
+        renderArchiveStats();
+        els.archiveBody.innerHTML = "";
+        els.archiveNote.textContent = "The full archive is loaded only on this tab so the daily story opens faster.";
+        return;
+      }
+
+      const filtered = getFilteredMedalists();
+      const limit = 300;
+      const shown = filtered.slice(0, limit);
+      els.archiveCoverage.textContent = `Source: ${medalistArchive.sourceName}. Coverage ${medalistArchive.coverage}; ${formatNumber(medalistArchive.countryPagesChecked)} official country pages checked.`;
+      els.archiveCount.textContent = `${formatNumber(filtered.length)} matches`;
+      renderArchiveStats();
+      els.archiveBody.innerHTML = "";
+
+      shown.forEach((person) => {
+        const profile = profileForMedalist(person);
+        const row = document.createElement("tr");
+        const nameCell = document.createElement("td");
+        const awardCell = document.createElement("td");
+        const recordCell = document.createElement("td");
+        const countryCell = document.createElement("td");
+        const proofCell = document.createElement("td");
+        const name = document.createElement("span");
+        const sub = document.createElement("span");
+        const badge = document.createElement("span");
+        const proof = document.createElement("a");
+
+        name.className = "medalist-name";
+        name.textContent = person.name;
+        sub.className = "medalist-sub";
+        sub.textContent = profile ? "Deep story available in Almanac" : `IMO contestant ID ${person.id}`;
+        nameCell.append(name, sub);
+
+        badge.className = awardClass(person.bestAward);
+        badge.textContent = AWARD_LABELS[person.bestAward] || person.bestAward;
+        awardCell.append(badge);
+
+        recordCell.textContent = awardSummary(person);
+        countryCell.textContent = `${person.countries.join(" / ")} | ${person.years.join(", ")}`;
+
+        proof.className = "archive-proof";
+        proof.href = person.officialUrl;
+        proof.target = "_blank";
+        proof.rel = "noreferrer";
+        proof.textContent = "Official IMO";
+        proofCell.append(proof);
+
+        const spark = document.createElement("button");
+        spark.type = "button";
+        spark.className = "archive-spark";
+        spark.textContent = "Copy spark";
+        spark.addEventListener("click", () => {
+          copyText(formatArchiveSpark(person), "Archive spark");
+        });
+        proofCell.append(spark);
+
+        if (profile) {
+          const open = document.createElement("button");
+          open.type = "button";
+          open.className = "archive-open";
+          open.textContent = "Open story";
+          open.addEventListener("click", () => {
+            state.activeId = profile.id;
+            setMode("story");
+            render();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+          proofCell.append(open);
+        }
+
+        row.append(nameCell, awardCell, recordCell, countryCell, proofCell);
+        els.archiveBody.append(row);
+      });
+
+      els.archiveNote.textContent = filtered.length > limit
+        ? `Showing first ${formatNumber(limit)} of ${formatNumber(filtered.length)} matches. Search or filter for a specific student-inspiration example. ${medalistArchive.note}`
+        : medalistArchive.note;
+    }
+
+    function renderProfile() {
+      if (!profiles.length) {
+        els.profileName.textContent = "Profile data not found";
+        els.profileRole.textContent = "Check data/olympiad-inspiration-profiles.js";
+        return;
+      }
+
+      const profile = activeProfile();
+      const todayId = getTodayProfile()?.id;
+      const rotationProfiles = publishedProfiles();
+      const rotationIndex = rotationProfiles.findIndex((item) => item.id === profile.id);
+      const index = profiles.findIndex((item) => item.id === profile.id);
+
+      els.dateLabel.textContent = `India date: ${formatIndiaDate()}`;
+      els.rotationLabel.textContent = profile.id === todayId
+        ? `Today's profile | ${rotationIndex + 1} of ${rotationProfiles.length} published`
+        : `Profile ${index + 1} of ${profiles.length}`;
+
+      els.heroAvatar.className = `hero-avatar ${domainClass(profile)}`;
+      els.heroAvatar.textContent = profile.initials;
+      els.profileName.textContent = profile.name;
+      els.profileRole.textContent = profile.role;
+      els.profileHeadline.textContent = profile.headline;
+      els.chips.innerHTML = "";
+      [profile.domain, profile.country, profile.region].forEach((text) => els.chips.append(makeChip(text)));
+      renderReviewBadges(profile);
+      els.classroomAngle.textContent = profile.indiaConnect?.[0] || profile.headline;
+      els.dailyAction.textContent = profile.practice;
+      els.sourceCount.textContent = `${profile.sources.length} sources`;
+      els.qualityPill.textContent = profileStatus(profile) === "published" ? "Published" : "Needs review";
+
+      renderList(els.whyPopular, profile.whyPopular);
+      renderList(els.olympiad, profile.olympiad);
+      renderList(els.impact, profile.impact);
+      renderList(els.growthDrivers, profile.growthDrivers);
+      renderList(els.trajectory, profile.trajectory);
+      renderList(els.indiaConnect, profile.indiaConnect);
+      renderProofLinks(profile);
+
+      const coachingNote = safeCoachingConnect(profile);
+      if (coachingNote) {
+        els.coachingNote.hidden = false;
+        els.coachingNote.textContent = `Coaching connection: ${coachingNote}`;
+      } else {
+        els.coachingNote.hidden = true;
+      }
+
+      els.sourceList.innerHTML = "";
+      profile.sources.forEach((source) => {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        const type = document.createElement("span");
+        link.href = source.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = source.label;
+        type.className = "source-type";
+        type.textContent = source.type;
+        item.append(link, type);
+        els.sourceList.append(item);
+      });
+      els.officialLinks.innerHTML = "";
+      OFFICIAL_OLYMPIAD_RESOURCES.forEach((resource) => {
+        const link = document.createElement("a");
+        const title = document.createElement("strong");
+        const note = document.createElement("span");
+        link.className = "official-link";
+        link.href = resource.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        title.textContent = `${resource.tag} | ${resource.label}`;
+        note.textContent = resource.note;
+        link.append(title, note);
+        els.officialLinks.append(link);
+      });
+      els.qualityNote.textContent = `${profile.quality} Review note: ${profileReview(profile).notes}`;
+      els.sparkTitle.textContent = `${firstName(profile)}: from rough work to real-world impact`;
+      els.sparkCopy.textContent = sparkCopy(profile);
+      els.sparkLens.textContent = thinkingLens(profile);
+      els.sparkProofs.textContent = getProofLinks(profile).length;
+      els.sparkSources.textContent = profile.sources.length;
+      els.qualityLedger.innerHTML = "";
+      QUALITY_LEDGER.forEach((line) => {
+        const item = document.createElement("li");
+        item.textContent = line;
+        els.qualityLedger.append(item);
+      });
+      renderMissionGrid();
+      renderCoverageGrid();
+      renderSharePack(profile);
+      updateAudienceControls();
+      els.messageText.value = formatWhatsApp(profile, state.messageMode);
+    }
+
+    function updateAudienceControls() {
+      const mode = state.messageMode;
+      const teacher = mode === "teacher-lab";
+      els.messageModeButtons.forEach((button) => {
+        const active = button.dataset.messageModeButton === mode;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+      });
+      els.sparkKicker.textContent = {
+        "royal-short": "Elegant short daily spark",
+        "student-deep": "Student-ready motivation spark",
+        "teacher-lab": "Teacher-ready lesson spark",
+        "parent-note": "Parent-ready encouragement note"
+      }[mode] || "WhatsApp-ready spark";
+      els.audienceHint.textContent = {
+        "royal-short": "Compact, premium message with only the strongest proof links.",
+        "student-deep": "Direct encouragement for students to learn, reflect, and return tomorrow.",
+        "teacher-lab": "Respectful classroom flow for teachers to guide discussion.",
+        "parent-note": "Parent-friendly framing around patience, effort, and long-term growth."
+      }[mode] || "";
+      els.sparkLensLabel.textContent = teacher ? "Teaching lens" : mode === "parent-note" ? "Parent lens" : "Student lens";
+      const label = MESSAGE_MODES[mode] || "Message";
+      els.copyMessageBtn.textContent = `Copy ${label}`;
+      els.copyTopBtn.textContent = `Copy ${label}`;
+    }
+
+    function firstName(profile) {
+      return profile.name.split(" ")[0];
+    }
+
+    function emojiPalette(profile) {
+      const palettes = {
+        ai: ["🧠", "🛠️", "🔍", "⚙️", "🚀", "🧪"],
+        crypto: ["🔐", "🧾", "⚖️", "🧠", "🛡️", "🌐"],
+        science: ["🔬", "🧲", "⚗️", "🌌", "📊", "🧪"],
+        math: ["🧩", "📐", "🔢", "✍️", "🏔️", "💡"]
+      };
+      const base = palettes[domainClass(profile)] || ["✨", "🧭", "📌", "🎯", "💡", "🌱"];
+      const seed = Array.from(profile.id || profile.name).reduce((sum, char) => sum + char.charCodeAt(0), 0) % base.length;
+      return base.map((_, index) => base[(index + seed) % base.length]);
+    }
+
+    const STYLE_DIVIDER = "༺═──────────────═༻";
+    const STYLE_FRAME_TOP = "╔═━─━─━∞◆∞━─━─━═╗";
+    const STYLE_FRAME_BOTTOM = "╚═━─━─━∞◆∞━─━─━═╝";
+    const STYLE_CARD_TOP = "┏━━━ ◈ ━━━┓";
+    const STYLE_CARD_BOTTOM = "┗━━━ ◈ ━━━┛";
+    const FANCY_UPPER = {
+      A: "𝑨", B: "𝑩", C: "𝑪", D: "𝑫", E: "𝑬", F: "𝑭", G: "𝑮", H: "𝑯", I: "𝑰",
+      J: "𝑱", K: "𝑲", L: "𝑳", M: "𝑴", N: "𝑵", O: "𝑶", P: "𝑷", Q: "𝑸", R: "𝑹",
+      S: "𝑺", T: "𝑻", U: "𝑼", V: "𝑽", W: "𝑾", X: "𝑿", Y: "𝒀", Z: "𝒁"
+    };
+
+    function fancyTitle(text) {
+      return String(text || "").toUpperCase().replace(/[A-Z]/g, (letter) => FANCY_UPPER[letter] || letter);
+    }
+
+    function sectionTitle(icon, text) {
+      return `${icon} *${String(text || "").toUpperCase()}*`;
+    }
+
+    function styleFrame(title, subtitle = "") {
+      return [
+        STYLE_FRAME_TOP,
+        title,
+        STYLE_FRAME_BOTTOM,
+        subtitle ? `\n${subtitle}` : null
+      ].filter(Boolean).join("\n");
+    }
+
+    function mentorSpark(opening) {
+      return String(opening || "")
+        .split(/(?<=\.)\s+/)
+        .filter(Boolean)
+        .map((sentence) => `*${sentence.trim()}*`)
+        .join("\n\n");
+    }
+
+    function quoteLine(text) {
+      const value = emphasizeKeyTerms(text);
+      return value.includes("*") ? `> ${value}` : `> *${value}*`;
+    }
+
+    function emphasizeKeyTerms(text) {
+      const tokens = [
+        ["__JEE_AIR_ONE__", "🏁 *JEE Advanced AIR 1*"],
+        ["__JEE_RANK_ONE__", "🏁 *JEE Advanced Rank 1*"],
+        ["__AIR_ONE__", "🏁 *AIR 1*"],
+        ["__IMO_GOLD__", "🥇 *IMO Gold*"],
+        ["__IOI_GOLD__", "🥇 *IOI Gold*"],
+        ["__IPHO_GOLD__", "🥇 *IPhO Gold*"],
+        ["__ICHO_GOLD__", "🥇 *IChO Gold*"],
+        ["__IMO_SILVER__", "🥈 *IMO Silver*"],
+        ["__IOI_SILVER__", "🥈 *IOI Silver*"],
+        ["__FIELDS_MEDAL__", "🏅 *Fields Medal*"]
+      ];
+      let value = String(text || "")
+        .replace(/\bJEE Advanced AIR 1\b/g, "__JEE_AIR_ONE__")
+        .replace(/\bJEE Advanced rank 1\b/gi, "__JEE_RANK_ONE__")
+        .replace(/\bAIR 1\b/g, "__AIR_ONE__")
+        .replace(/\bIMO gold\b/gi, "__IMO_GOLD__")
+        .replace(/\bIOI gold\b/gi, "__IOI_GOLD__")
+        .replace(/\bIPhO gold\b/gi, "__IPHO_GOLD__")
+        .replace(/\bIChO gold\b/gi, "__ICHO_GOLD__")
+        .replace(/\bIMO silver\b/gi, "__IMO_SILVER__")
+        .replace(/\bIOI silver\b/gi, "__IOI_SILVER__")
+        .replace(/\bFields Medal\b/g, "__FIELDS_MEDAL__")
+        .replace(/\bMIT\b/g, "🏛️ *MIT*")
+        .replace(/\bOpenAI\b/g, "🤖 *OpenAI*")
+        .replace(/\bGPT-4o\b/g, "✨ *GPT-4o*")
+        .replace(/\bIOQM\b/g, "📘 *IOQM*")
+        .replace(/\bINMO\b/g, "✍️ *INMO*")
+        .replace(/\bIMO\b/g, "🌍 *IMO*")
+        .replace(/\bIOI\b/g, "💻 *IOI*");
+      tokens.forEach(([token, replacement]) => {
+        value = value.replaceAll(token, replacement);
+      });
+      return value;
+    }
+
+    function bulletLines(items, profile = activeProfile()) {
+      const icons = emojiPalette(profile);
+      return (items || [])
+        .map((item, index) => `${icons[index % icons.length]} ${emphasizeKeyTerms(item)}`)
+        .join("\n\n");
+    }
+
+    function habitIngredientLines(profile) {
+      const icons = emojiPalette(profile);
+      return [
+        [`${icons[0]} *Patience under pressure*`, "Do not panic when the first idea fails; stay with the problem."],
+        [`${icons[1]} *Courage with unfamiliar problems*`, "Train the mind to enter a new problem without fear."],
+        [`${icons[2]} *Case-checking discipline*`, "Look for hidden conditions, edge cases, and weak assumptions."],
+        [`${icons[3]} *Clear explanation*`, "Write so another serious student can follow the thinking."],
+        [`${icons[4]} *Confidence through struggle*`, "Every honest attempt adds strength, even before the medal appears."]
+      ].map(([title, detail]) => `${title}\n\n${detail}`).join("\n\n");
+    }
+
+    function numberedJourney(profile) {
+      const icons = emojiPalette(profile);
+      return (profile.trajectory || []).map((item, index) => {
+        const [label, ...rest] = item.split(":");
+        const title = rest.length ? label.trim() : `Step ${index + 1}`;
+        const body = emphasizeKeyTerms(rest.length ? rest.join(":").trim() : item);
+        return `${icons[index % icons.length]} *${index + 1}. ${title}*\n\n${body}`;
+      }).join("\n\n⬇️\n\n");
+    }
+
+    function sourceLines(profile, limit = Infinity) {
+      return profile.sources.slice(0, limit).map((source, index) => [
+        `*${index + 1}. ${source.label}*`,
+        source.type ? `${source.type}:` : null,
+        source.url
+      ].filter(Boolean).join("\n")).join("\n\n");
+    }
+
+    function focusedResources(profile) {
+      if (!profile) return OFFICIAL_OLYMPIAD_RESOURCES;
+      const text = `${profile.domain} ${profile.role} ${profile.headline}`.toLowerCase();
+      const priority = ["IMO", "India", "IOQM"];
+      if (text.includes("ioi") || text.includes("software") || text.includes("algorithm") || text.includes("coding")) {
+        priority.push("IOI", "IOI Stats");
+      }
+      if (text.includes("ai")) priority.push("IOAI", "AIMO");
+      if (text.includes("physics") || text.includes("astronomy")) priority.push("IPhO", "IOAA");
+      if (text.includes("chem")) priority.push("IChO");
+      if (text.includes("bio")) priority.push("IBO");
+      if (text.includes("math")) priority.push("AIMO");
+      const seen = new Set();
+      const picked = priority
+        .map((tag) => OFFICIAL_OLYMPIAD_RESOURCES.find((resource) => resource.tag === tag))
+        .filter(Boolean)
+        .filter((resource) => {
+          if (seen.has(resource.tag)) return false;
+          seen.add(resource.tag);
+          return true;
+        });
+      OFFICIAL_OLYMPIAD_RESOURCES.forEach((resource) => {
+        if (!seen.has(resource.tag) && picked.length < 6) {
+          picked.push(resource);
+          seen.add(resource.tag);
+        }
+      });
+      return picked;
+    }
+
+    function officialResourceLines(profile = null, limit = Infinity) {
+      return focusedResources(profile).slice(0, limit).map((resource, index) => [
+        `*${index + 1}. ${resource.tag} - ${resource.label}*`,
+        `${resource.note}:`,
+        resource.url
+      ].join("\n")).join("\n\n");
+    }
+
+    function coverageLines(limit = Infinity) {
+      return COVERAGE_STREAMS.slice(0, limit).map((stream) => [
+        `${stream.icon} *${stream.title}*`,
+        `Scope: ${stream.scope}`,
+        `Use: ${stream.status}`
+      ].join("\n")).join("\n\n");
+    }
+
+    function qualityProtocolLines(profile = activeProfile()) {
+      const icons = emojiPalette(profile);
+      return QUALITY_LEDGER.map((line, index) => `${icons[index % icons.length]} ${line}`).join("\n\n");
+    }
+
+    function selectedSourceLines(profile, maxLinks = 4) {
+      const lines = [];
+      const urls = new Set();
+      const add = (label, detail, url) => {
+        if (!url || urls.has(url) || lines.length >= maxLinks) return;
+        urls.add(url);
+        lines.push([
+          `*${lines.length + 1}. ${label}*`,
+          detail ? `${detail}:` : null,
+          url
+        ].filter(Boolean).join("\n"));
+      };
+
+      getProofLinks(profile).forEach((proof) => add(proof.label, proof.detail, proof.url));
+      (profile.sources || []).forEach((source) => add(source.label, source.type, source.url));
+      return lines.join("\n\n");
+    }
+
+    function proofLines(profile, limit = Infinity) {
+      const icons = ["🔐", "📎", "🧾"];
+      return getProofLinks(profile).slice(0, limit).map((proof, index) => [
+        `${icons[index % icons.length]} *${proof.label}*`,
+        `${proof.detail}:`,
+        proof.url
+      ].join("\n")).join("\n\n");
+    }
+
+    function studentQuestions(profile) {
+      const text = `${profile.domain} ${profile.role}`.toLowerCase();
+      if (text.includes("ai") || text.includes("software") || text.includes("data")) {
+        return [
+          "Can a hard problem solved in a notebook become useful in AI and technology?",
+          "Why should I care about proof, models, edge cases, testing, and clean logic?",
+          "Can my Olympiad preparation become real-world building power?"
+        ];
+      }
+      if (text.includes("blockchain") || text.includes("crypto")) {
+        return [
+          "Why do rules, proof, and security matter so much in technology?",
+          "Can abstract mathematics become real financial infrastructure?",
+          "Is careful reasoning more important than hype?"
+        ];
+      }
+      if (text.includes("physics") || text.includes("astronomy")) {
+        return [
+          "Why should I struggle with models, diagrams, and long derivations?",
+          "Can Olympiad thinking become real scientific insight?",
+          "How do accuracy and imagination work together?"
+        ];
+      }
+      return [
+        "Why am I spending so much time on proofs?",
+        "Will geometry, number theory, combinatorics, and inequalities matter later?",
+        "Can difficult problems really change the way I think?"
+      ];
+    }
+
+    function visualActivity(profile) {
+      const steps = (profile.trajectory || []).map((item) => item.split(":")[0].trim()).filter(Boolean).slice(0, 4);
+      const ladder = emphasizeKeyTerms(steps.length >= 3 ? steps.join("  ➜  ") : "Olympiad habit  ➜  Deep skill  ➜  Public impact");
+      return [
+        `*Board map:* ${ladder}`,
+        `*Student pause:* Which step am I training today?`,
+        `*Reflection sentence:* Today's problem trained ___ because ___.`,
+        `*Connect back:* Let one student explain how the current problem builds one habit from ${firstName(profile)}'s journey.`
+      ];
+    }
+
+    function thinkingLens(profile) {
+      const text = `${profile.domain} ${profile.role}`.toLowerCase();
+      if (text.includes("ai") || text.includes("software") || text.includes("data")) return "Reliability";
+      if (text.includes("blockchain") || text.includes("crypto")) return "Proof";
+      if (text.includes("physics") || text.includes("astronomy")) return "Models";
+      if (text.includes("mathematics") || text.includes("math")) return "Depth";
+      return "Courage";
+    }
+
+    function thinkingEquation(profile) {
+      const lens = thinkingLens(profile);
+      const equations = {
+        Reliability: "RELIABILITY² + EDGE-CASESⁿ = TRUST∞",
+        Proof: "PROOF² + PATIENCEⁿ = CLARITY∞",
+        Models: "IMAGINATION² + ACCURACYⁿ = INSIGHT∞",
+        Depth: "DEPTH² + DISCIPLINEⁿ = CAPABILITY∞",
+        Courage: "COURAGE² + REVISIONⁿ = GROWTH∞"
+      };
+      return equations[lens] || equations.Courage;
+    }
+
+    function teacherOpening(profile) {
+      const lens = thinkingLens(profile);
+      const text = `${profile.domain} ${profile.role}`.toLowerCase();
+      if (lens === "Reliability") {
+        return `Today we are not reading about fame in technology. We are studying how a student trained on hard problems learns to build systems where logic, edge cases, and patience actually matter.`;
+      }
+      if (lens === "Proof") {
+        return `Today we are not reading about hype. We are studying how proof, rules, and careful reasoning can become a student's protection against confusion.`;
+      }
+      if (lens === "Models") {
+        return `Today we are not reading about formulas only. We are studying how imagination becomes powerful when it is disciplined by accuracy.`;
+      }
+      if (text.includes("education") || text.includes("teacher")) {
+        return `Today we are not reading only about achievement. We are studying how deep learning becomes useful when it is shared with other students.`;
+      }
+      return `Today we are not reading about a medal as a trophy. We are studying the hidden habit behind it: staying with a difficult idea until it becomes clear.`;
+    }
+
+    function sparkCopy(profile) {
+      return `Use this profile to show students how ${firstName(profile)}'s Olympiad habits connect to ${profile.domain}, public work, and one concrete action they can try today.`;
+    }
+
+    function formatWhatsApp(profile, mode = state.messageMode) {
+      if (mode === "royal-short") return formatRoyalShortWhatsApp(profile);
+      if (mode === "teacher-lab") return formatTeacherWhatsApp(profile);
+      if (mode === "parent-note") return formatParentNoteWhatsApp(profile);
+      return formatStudentWhatsApp(profile);
+    }
+
+    function formatRoyalShortWhatsApp(profile) {
+      const icons = emojiPalette(profile);
+      const lens = thinkingLens(profile);
+      return [
+        styleFrame(`📜 *${fancyTitle("THE OLYMPIAD ALMANAC")}*`, "⚡ *Royal Short: one story, one habit, one action* ⚡"),
+        "",
+        `📅 *${formatIndiaDate()}*`,
+        "",
+        sectionTitle("👤", "Today's Profile"),
+        "",
+        `*${fancyTitle(profile.name)}*`,
+        `_${emphasizeKeyTerms(profile.headline)}_`,
+        "",
+        `${icons[0]} *Field:* ${profile.domain}`,
+        `${icons[1]} *Habit lens:* ${lens} under pressure`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🔥", "Why It Matters"),
+        "",
+        bulletLines(profile.whyPopular.slice(0, 2), profile),
+        "",
+        quoteLine("A difficult problem is not blocking you; it is building you."),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🎯", "Today's Action"),
+        "",
+        emphasizeKeyTerms(profile.practice),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🔐", "Proof"),
+        "",
+        selectedSourceLines(profile, 2),
+        "",
+        styleFrame("✍️ *Reflection*\n\n*Which habit did today's problem train in me?*")
+      ].join("\n");
+    }
+
+    function formatStudentWhatsApp(profile) {
+      const visual = visualActivity(profile);
+      const openingInsight = profile.indiaConnect?.[0] || profile.headline;
+      const lens = thinkingLens(profile);
+      const icons = emojiPalette(profile);
+      return [
+        styleFrame(`📜 *${fancyTitle("THE OLYMPIAD ALMANAC")}*`, "✦ *One true story. One habit. One serious attempt today.* ✦"),
+        "",
+        `📅 *${formatIndiaDate()}*`,
+        "🇮🇳 *For IOQM / INMO / IMO / IOI / IPhO / IChO / IOAI aspirants*",
+        "",
+        `⌁ *${thinkingEquation(profile)}* ⌁`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("👤", "Profile Of The Day"),
+        "",
+        `*${fancyTitle(profile.name)}*`,
+        "",
+        `_${emphasizeKeyTerms(profile.headline)}_`,
+        "",
+        `${icons[0]} *Field:* ${profile.domain}`,
+        `${icons[1]} *Country/Region:* ${profile.country}`,
+        `${icons[2]} *Known for:* ${emphasizeKeyTerms(profile.role)}`,
+        `${icons[3]} *Thinking lens:* ${lens} under pressure`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🔥", "Why This Should Matter To You"),
+        "",
+        "Dear student, if a hard problem is making you feel slow, confused, or behind, pause for a moment.",
+        "",
+        "The point of Olympiad preparation is not only to collect medals. It is to train a mind that can stay calm when the path is not visible.",
+        "",
+        bulletLines(profile.whyPopular.slice(0, 3), profile),
+        "",
+        quoteLine("A difficult problem is not blocking you; it is building you."),
+        "",
+        `✅ ${emphasizeKeyTerms(openingInsight)}`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🏆", "Olympiad Foundation"),
+        "",
+        bulletLines(profile.olympiad.slice(0, 3), profile),
+        "",
+        quoteLine("The medal is visible. The thinking transformation is invisible."),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🧭", "Journey Map"),
+        "",
+        numberedJourney(profile),
+        "",
+        "Notice the pattern: the Olympiad phase did not remain only as a certificate. It became a way of thinking, building, researching, teaching, or leading.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🚀", "Public Impact"),
+        "",
+        bulletLines(profile.impact.slice(0, 3), profile),
+        "",
+        "The connection is simple: the same habits used in a hard Olympiad problem later appear in research, AI systems, secure technology, proofs, startups, and scientific discovery.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🧬", "What You Are Quietly Training"),
+        "",
+        habitIngredientLines(profile),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🇮🇳", "Connect This To Your Preparation"),
+        "",
+        bulletLines(profile.indiaConnect.slice(0, 3), profile),
+        safeCoachingConnect(profile) ? `\n\n🏫 *Classroom/coaching note*\n${icons[4]} ${emphasizeKeyTerms(safeCoachingConnect(profile))}` : null,
+        "",
+        styleFrame("*Marks are short-term feedback.*\n\n*Thinking quality is long-term capital.*"),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🎯", "Today's 20-Minute Action"),
+        "",
+        `${icons[5] || icons[0]} ${emphasizeKeyTerms(profile.practice)}`,
+        "",
+        "Do it slowly. Write the reason behind each step. The goal today is not speed; the goal is better thinking.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🎨", "Mini Visual Activity"),
+        "",
+        bulletLines(visual.slice(0, 3), profile),
+        "",
+        "This changes the story from a forward into a discussion.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🔐", "Proof And Sources"),
+        "",
+        selectedSourceLines(profile, 4),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🌐", "Focused Olympiad Desk"),
+        "",
+        "More official Olympiad resources and profile sources are available on the website.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("✅", "Learning Takeaway"),
+        "",
+        "Prepare because every serious problem is training your mind to become calmer, sharper, more creative, more resilient, and more courageous.",
+        "",
+        styleFrame("✍️ *Today’s Reflection*\n\n*What did this story teach me about my own preparation?*")
+      ].filter((line) => line !== null && line !== undefined).join("\n");
+    }
+
+    function formatTeacherWhatsApp(profile) {
+      const visual = visualActivity(profile);
+      const lens = thinkingLens(profile);
+      const icons = emojiPalette(profile);
+      return [
+        styleFrame(`📜 *${fancyTitle("THE OLYMPIAD ALMANAC")}*`, "👩‍🏫 *TEACHER MODE: story, habit, classroom action*"),
+        "",
+        STYLE_DIVIDER,
+        "",
+        `📅 *${formatIndiaDate()}*`,
+        "🙏 *For respected teachers mentoring IOQM / INMO / IMO / IOI / IPhO / IChO / IOAI learners*",
+        "",
+        "Dear Teachers,",
+        "",
+        "This note is not meant to tell you something you already know. It is a ready classroom spark: one verified story, one thinking habit, and one short activity to help students return to hard problems with courage.",
+        "",
+        `🧠 *Teaching lens:* ${lens} under pressure`,
+        "",
+        `⌁ *${thinkingEquation(profile)}* ⌁`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🎙️", "Opening Line For Class"),
+        "",
+        mentorSpark(teacherOpening(profile)),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("👤", "Profile For Today's Discussion"),
+        "",
+        `*${fancyTitle(profile.name)}*`,
+        "",
+        `_${emphasizeKeyTerms(profile.headline)}_`,
+        "",
+        `${icons[0]} *Field:* ${profile.domain}`,
+        `${icons[1]} *Country/Region:* ${profile.country}`,
+        `${icons[2]} *Known for:* ${emphasizeKeyTerms(profile.role)}`,
+        `${icons[3]} *Classroom value:* Shows students how Olympiad habits become long-term thinking capital.`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🌱", "Why This Can Help Students Who Are Struggling"),
+        "",
+        bulletLines([
+          "A struggling student often thinks, 'Maybe I am not made for this.' This story can gently show that deep growth is usually invisible in the beginning.",
+          "A strong student often wants only speed. This story can remind them that accuracy, explanation, and revision are also marks of maturity.",
+          "A parent often sees only marks. This story helps explain that rough work, failed attempts, and corrected solutions are part of real preparation."
+        ], profile),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🏆", "Verified Olympiad Context"),
+        "",
+        bulletLines(profile.olympiad.slice(0, 3), profile),
+        "",
+        sectionTitle("🚀", "Public Impact Students Can Connect With"),
+        "",
+        bulletLines(profile.impact.slice(0, 3), profile),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🧭", "7-Minute Classroom Flow"),
+        "",
+        `${icons[0]} *1. Hook - 60 seconds*\n   Ask: What habit from Olympiad preparation might still matter 10 years later?`,
+        "",
+        `${icons[1]} *2. Story - 2 minutes*\n   Present ${firstName(profile)}'s journey using the snapshot and trajectory below.`,
+        "",
+        `${icons[2]} *3. Board map - 2 minutes*\n   ${visual[0]}`,
+        "",
+        `${icons[3]} *4. Student reflection - 90 seconds*\n   Ask students to complete: Today's problem trained me in ___ because ___.`,
+        "",
+        `${icons[4]} *5. Action - 90 seconds*\n   ${emphasizeKeyTerms(profile.practice)}`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🕰️", "Journey Map To Show On Board"),
+        "",
+        numberedJourney(profile),
+        "",
+        "📌 *Teacher note:*",
+        "",
+        quoteLine("The aim is not celebrity worship. The aim is to help students connect daily struggle with long-term capability."),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🧬", "Habits To Name Explicitly"),
+        "",
+        habitIngredientLines(profile),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("💬", "Words That Can Encourage A Struggling Student"),
+        "",
+        bulletLines([
+          "You do not need to solve every hard problem today; you need to become a little less afraid of hard problems.",
+          "A blank page is not failure. It is the starting point of thinking.",
+          "When you rewrite a proof or debug a solution, you are building the exact habit serious fields demand."
+        ], profile),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🔐", "Proof And Sources"),
+        "",
+        selectedSourceLines(profile, 4),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🌐", "Focused Olympiad Desk"),
+        "",
+        "More official Olympiad resources and profile sources are available on the website.",
+        "",
+        "Quality rule: person-specific coaching claims are included only when supported by a credible source. Otherwise, the message stays respectful to every teacher, institute, and student.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("✅", "Teacher Takeaway"),
+        "",
+        "Use this as a short learning ritual: story, habit, question, action. The goal is to help students come back tomorrow with more patience, more courage, and better thinking.",
+        "",
+        styleFrame("✍️ *Classroom Reflection*\n\n*Ask students to write one learning line after the discussion. That line matters more than a simple forward.*")
+      ].filter((line) => line !== null && line !== undefined).join("\n");
+    }
+
+    function formatParentNoteWhatsApp(profile) {
+      const icons = emojiPalette(profile);
+      return [
+        styleFrame(`📜 *${fancyTitle("THE OLYMPIAD ALMANAC")}*`, "👨‍👩‍👧 *Parent Note: encouragement with proof*"),
+        "",
+        `📅 *${formatIndiaDate()}*`,
+        "",
+        "Dear Parents,",
+        "",
+        "Olympiad preparation is not only about a medal. It is a way of training patience, clarity, and courage in a child who is learning to face hard problems.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("👤", "Today's Example"),
+        "",
+        `*${fancyTitle(profile.name)}*`,
+        `_${emphasizeKeyTerms(profile.headline)}_`,
+        "",
+        `${icons[0]} *Known for:* ${emphasizeKeyTerms(profile.role)}`,
+        `${icons[1]} *Olympiad foundation:* ${emphasizeKeyTerms((profile.olympiad || [])[0] || "Verified Olympiad background")}`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🌱", "What To Encourage At Home"),
+        "",
+        `${icons[2]} ${emphasizeKeyTerms(profile.parentTeacherNote)}`,
+        "",
+        "Please notice effort that is not immediately visible: rough work, failed attempts, rewritten proofs, debugging, checking, and asking why.",
+        "",
+        quoteLine("Marks are short-term feedback. Thinking quality is long-term capital."),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🎯", "Today's Gentle Action"),
+        "",
+        "Ask your child one question after study time:",
+        "",
+        "✍️ *Reflection question:*",
+        "",
+        quoteLine("What became clearer today, even if the full solution did not come?"),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🔐", "Proof"),
+        "",
+        selectedSourceLines(profile, 2),
+        "",
+        styleFrame("✅ *Parent Takeaway*\n\n*Encourage the attempt, the correction, and the return to the problem. That is where confidence is built.*")
+      ].join("\n");
+    }
+
+    function formatArchiveSpark(person) {
+      const award = AWARD_LABELS[person.bestAward] || person.bestAward || "Verified";
+      const years = (person.years || []).join(", ");
+      const countries = (person.countries || []).join(" / ");
+      const records = awardSummary(person);
+      return [
+        styleFrame(`📜 *${fancyTitle("THE OLYMPIAD ALMANAC")}*`, "✦ *Verified IMO Medalist Spark* ✦"),
+        "",
+        `📅 *${formatIndiaDate()}*`,
+        "🇮🇳 *For students who need one honest push today*",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("👤", "Official Archive Profile"),
+        "",
+        `*${person.name}*`,
+        "",
+        `🥇 *Best listed prize:* ${award}`,
+        `📍 *Team/country:* ${countries}`,
+        `📅 *Year(s):* ${years}`,
+        `🧾 *Record summary:* ${records || "Official IMO contestant record"}`,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🧠", "Student Lesson"),
+        "",
+        "This spark is intentionally simple: one verified student, one official record, one lesson.",
+        "",
+        quoteLine("Behind every medal is a long season of attempts that nobody saw."),
+        "",
+        "If you are struggling today, do not compare only the final result. Study the habit behind the result: patience, proof, revision, and courage with unfamiliar problems.",
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🎯", "Today's 20-Minute Action"),
+        "",
+        "Choose one Olympiad problem you could not solve earlier.",
+        "",
+        "Write three things only:",
+        "",
+        "1. What did I try?",
+        "2. Where did my idea break?",
+        "3. What will I test next?",
+        "",
+        quoteLine("A serious attempt is never wasted when it becomes clearer thinking."),
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("🔐", "Official Proof"),
+        "",
+        `*Official IMO contestant record:*`,
+        person.officialUrl,
+        "",
+        STYLE_DIVIDER,
+        "",
+        sectionTitle("✅", "Takeaway"),
+        "",
+        "Do not prepare only for a medal. Prepare because every honest problem trains the mind to become calmer, sharper, and more courageous.",
+        "",
+        styleFrame("✍️ *Reflection*\n\n*What did I learn from today's struggle?*")
+      ].join("\n");
+    }
+
+    function teacherToolkitText(profile, kind) {
+      const visual = visualActivity(profile);
+      const icons = emojiPalette(profile);
+      const map = {
+        opening: [
+          "🎙️ *Opening line for class*",
+          "",
+          teacherOpening(profile)
+        ],
+        board: [
+          "🎨 *Board activity*",
+          "",
+          visual[0],
+          visual[1],
+          visual[2]
+        ],
+        flow: [
+          "🧭 *5-minute classroom flow*",
+          "",
+          `${icons[0]} *1 minute:* Ask which Olympiad habit still matters 10 years later.`,
+          `${icons[1]} *1 minute:* Introduce ${profile.name} and the verified Olympiad context.`,
+          `${icons[2]} *1 minute:* Draw the journey map on the board.`,
+          `${icons[3]} *1 minute:* Ask students to name one habit today's problem is training.`,
+          `${icons[4]} *1 minute:* Give the action: ${profile.practice}`
+        ],
+        homework: [
+          "📘 *Homework prompt*",
+          "",
+          profile.practice,
+          "",
+          "Add three lines below your solution:",
+          "1. Where did my first idea fail?",
+          "2. What hidden condition did I miss?",
+          "3. What will I try differently tomorrow?"
+        ],
+        reflection: [
+          "✍️ *Reflection question*",
+          "",
+          "Today's problem trained me in ______ because ______.",
+          "",
+          "One mistake I will respect and learn from is ______."
+        ]
+      };
+      return (map[kind] || map.opening).join("\n");
+    }
+
+    async function copyText(text, label) {
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast(`${label} copied`);
+      } catch (error) {
+        els.messageText.focus();
+        els.messageText.select();
+        document.execCommand("copy");
+        showToast(`${label} copied`);
+      }
+    }
+
+    function showToast(message) {
+      els.toast.textContent = message;
+      els.toast.classList.add("show");
+      window.clearTimeout(showToast.timer);
+      showToast.timer = window.setTimeout(() => els.toast.classList.remove("show"), 1800);
+    }
+
+    function move(delta) {
+      const index = profiles.findIndex((profile) => profile.id === state.activeId);
+      const nextIndex = (index + delta + profiles.length) % profiles.length;
+      state.activeId = profiles[nextIndex].id;
+      render();
+    }
+
+    function initFilters() {
+      els.domainFilter.innerHTML = "";
+      TRACK_FILTERS.forEach(({ value, label }) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = label;
+        els.domainFilter.append(option);
+      });
+
+      els.regionFilter.innerHTML = "";
+      REVIEW_FILTERS.forEach(({ value, label }) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = label;
+        els.regionFilter.append(option);
+      });
+    }
+
+    function initArchiveFilters() {
+      els.archiveAwardFilter.innerHTML = "";
+      [
+        ["all", "All prizes"],
+        ["gold", "Gold"],
+        ["silver", "Silver"],
+        ["bronze", "Bronze"],
+        ["hm", "Honorable mention"]
+      ].forEach(([value, label]) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = label;
+        els.archiveAwardFilter.append(option);
+      });
+
+      const countries = [...new Set(medalists.flatMap((person) => person.countries || []))].sort();
+      buildOptions(els.archiveCountryFilter, countries, "countries");
+    }
+
+    function render() {
+      renderStats();
+      renderProfileList();
+      renderProfile();
+      if (state.mode === "archive") {
+        renderMedalistArchive();
+      }
+    }
+
+    async function setMode(mode) {
+      state.mode = mode;
+      document.body.dataset.mode = mode;
+      els.modeButtons.forEach((button) => {
+        const active = button.dataset.modeButton === mode;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+      });
+      if (mode === "archive") {
+        renderMedalistArchive();
+        try {
+          await loadMedalistArchive();
+          renderMedalistArchive();
+        } catch (error) {
+          els.archiveCoverage.textContent = "Unable to load the IMO archive. Please check the connection and try again.";
+          els.archiveCount.textContent = "Load failed";
+          showToast("IMO archive could not load");
+        }
+        window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+      }
+    }
+
+    function applyMobileFilterState() {
+      const mobile = window.matchMedia("(max-width: 680px)").matches;
+      els.sidebar.classList.toggle("filters-collapsed", mobile);
+      els.filterToggleBtn.textContent = mobile ? "Search profiles and filters" : "Search and filters";
+      els.filterToggleBtn.setAttribute("aria-expanded", String(!mobile));
+    }
+
+    els.searchInput.addEventListener("input", (event) => {
+      state.query = event.target.value;
+      renderStats();
+      renderProfileList();
+    });
+
+    els.domainFilter.addEventListener("change", (event) => {
+      state.track = event.target.value;
+      const filtered = getFilteredProfiles();
+      if (filtered.length && !filtered.some((profile) => profile.id === state.activeId)) {
+        state.activeId = filtered[0].id;
+      }
+      render();
+    });
+
+    els.regionFilter.addEventListener("change", (event) => {
+      state.review = event.target.value;
+      const filtered = getFilteredProfiles();
+      if (filtered.length && !filtered.some((profile) => profile.id === state.activeId)) {
+        state.activeId = filtered[0].id;
+      }
+      render();
+    });
+
+    els.modeButtons.forEach((button) => {
+      button.addEventListener("click", () => setMode(button.dataset.modeButton));
+    });
+
+    els.filterToggleBtn.addEventListener("click", () => {
+      const collapsed = els.sidebar.classList.toggle("filters-collapsed");
+      els.filterToggleBtn.setAttribute("aria-expanded", String(!collapsed));
+      els.filterToggleBtn.textContent = collapsed ? "Search profiles and filters" : "Hide profiles and filters";
+    });
+
+    els.messageModeButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        state.messageMode = button.dataset.messageModeButton;
+        renderProfile();
+      });
+    });
+
+    els.archiveSearchInput.addEventListener("input", (event) => {
+      state.archiveQuery = event.target.value;
+      renderMedalistArchive();
+    });
+
+    els.archiveAwardFilter.addEventListener("change", (event) => {
+      state.archiveAward = event.target.value;
+      renderMedalistArchive();
+    });
+
+    els.archiveCountryFilter.addEventListener("change", (event) => {
+      state.archiveCountry = event.target.value;
+      renderMedalistArchive();
+    });
+
+    els.prevBtn.addEventListener("click", () => move(-1));
+    els.nextBtn.addEventListener("click", () => move(1));
+    els.todayBtn.addEventListener("click", () => {
+      state.activeId = getTodayProfile()?.id || profiles[0]?.id;
+      render();
+    });
+    els.copyTopBtn.addEventListener("click", () => copyText(els.messageText.value, "WhatsApp message"));
+    els.copyMessageBtn.addEventListener("click", () => copyText(els.messageText.value, "WhatsApp message"));
+    els.copySourcesBtn.addEventListener("click", () => {
+      copyText(`${sourceLines(activeProfile())}\n\n${officialResourceLines()}`, "Official links");
+    });
+    els.toolkitButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        copyText(teacherToolkitText(activeProfile(), button.dataset.toolkitCopy), button.textContent.trim());
+      });
+    });
+    els.archiveOfficialBtn.addEventListener("click", () => {
+      window.open("https://www.imo-official.org/results/", "_blank", "noreferrer");
+    });
+
+    initFilters();
+    initArchiveFilters();
+    applyMobileFilterState();
+    window.addEventListener("resize", applyMobileFilterState);
+    render();
+  </script>
+</body>
+</html>
