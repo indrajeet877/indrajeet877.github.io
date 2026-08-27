@@ -98,7 +98,7 @@ The workflow runs all six streams at 08:00, 14:00, and 20:00 Asia/Kolkata, and c
 The public mobile link page is:
 
 ```text
-https://yosoyun.github.io/ai-digest-bot.html
+https://indrajeet877.github.io/ai-digest-bot.html
 ```
 
 ## Notes
